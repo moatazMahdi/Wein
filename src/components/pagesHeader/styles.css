@@ -1,0 +1,59 @@
+.PagesHeader-main-container {
+    width: 1440px;
+    background-image: url('../../assets/images/about/aboutHeader.png');
+    width: 1440px;
+    height: 100vh;
+}
+
+.PagesHeader-container {
+    background: rgba(9, 6, 43, 0.90);
+    width: 1440px;
+    height: 100vh;
+    opacity: 0.7;
+}
+
+.PagesHeader-text-container {
+    width: 85%;
+    margin-left: 112px;
+    margin-top: 170px;
+}
+
+.PagesHeader-text-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.PagesHeader-text-row p {
+    color: var(--ffffff, #FFF);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Helvetica Neue;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -0.2px;
+    margin-left: 20px;
+    margin-bottom: -8px;
+}
+
+.PagesHeader-text-demo {
+    color: #FFF;
+    font-family: Helvetica Neue;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.28px;
+}
+
+.PagesHeader-sub-Descrpion {
+    width: 1215px;
+    color: var(--f-1-deff, #DBD1F1);
+    font-family: Helvetica Neue;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0.22px;
+}

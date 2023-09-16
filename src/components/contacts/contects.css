@@ -1,0 +1,108 @@
+.contects-container {
+    width: 1440px;
+    height: 623px;
+    flex-shrink: 0;
+    background: linear-gradient(58deg, #E54124 6.46%, #3F1BDD 35.51%);
+    display: flex;
+    justify-content: space-between;
+}
+
+.contects-container-section-right {
+    width: 538px;
+    height: 337px;
+    flex-shrink: 0;
+    margin-left: 111px;
+    margin-top: 142PX;
+    margin-bottom: 144PX;
+}
+
+.contects-container-section-right div {
+    display: flex;
+}
+
+.contects-container-section-right h1 {
+    width: 538px;
+    color: #FFF;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Helvetica Neue;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 81px;
+    /* 101.25% */
+    letter-spacing: -1px;
+    margin-top: 29px;
+}
+
+.contects-container-section-right h3 {
+    width: 538px;
+    color: #FFF;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Helvetica Neue;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px;
+    /* 170% */
+    letter-spacing: -0.05px;
+    margin-top: 16px;
+}
+
+.contects-container-section-right-CONTACT {
+    color: #FFF;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Helvetica Neue;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -0.2px;
+}
+
+.contects-container-section-lift {
+    width: 449px;
+    height: 355px;
+    flex-shrink: 0;
+    margin-right: 111px;
+    margin-top: 144px;
+    margin-bottom: 124PX;
+}
+
+.underline-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.underline-input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 449px;
+}
+
+.underline-input label {
+    color: #FFF;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Helvetica Neue;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 33px;
+
+}
+
+.underline-input input,
+.underline-input textarea {
+    border: none;
+    border-bottom: 2px solid #333;
+    padding: 5px;
+    outline: none;
+    transition: border-bottom-color 0.2s ease-in-out;
+}
+
+.underline-input input:focus,
+.underline-input textarea:focus {
+    border-bottom-color: #007bff;
+    /* Change this color for the focused underline */
+}

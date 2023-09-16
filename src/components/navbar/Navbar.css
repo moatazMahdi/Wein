@@ -1,0 +1,111 @@
+.image-row {
+    width: 1440px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.left-images {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 26px;
+    margin-left: 112px;
+
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+    margin: 0 10px;
+}
+
+.right-image {
+    width: 213px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 26px;
+    margin-right: 112px;
+}
+
+.menu-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.buttom {
+    display: flex;
+    margin-left: 31px;
+    border: 2px solid white;
+    justify-content: center;
+    align-items: center;
+    width: 157px;
+    height: 48px;
+}
+
+.bottom-text {
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* styles.css */
+.custom-button {
+    background-color: #0074d9;
+    /* Background color */
+    color: white;
+    /* Text color */
+    padding: 10px 20px;
+    /* Padding */
+    border: none;
+    /* Remove default button border */
+    cursor: pointer;
+    /* Change cursor on hover */
+}
+
+/* Style for button when hovered */
+.custom-button:hover {
+    background-color: #0056b3;
+    /* Hover background color */
+}
+
+@media (max-width: 375px) {
+    .image-row {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 100vw;
+    }
+
+    .left-images {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 26px;
+        margin-left: 40px;
+
+    }
+
+    .image {
+        max-width: 100%;
+        height: auto;
+        margin: 0 10px;
+    }
+
+    .right-image {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 26px;
+        margin-right: 40px;
+    }
+
+    .menu-image {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .CustomButton {
+        display: none;
+    }
+}

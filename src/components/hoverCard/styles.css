@@ -1,0 +1,145 @@
+.hoverCard-main-container {
+    width: 384px;
+    height: 500px;
+    flex-shrink: 0;
+    border: 2px solid #FFF;
+    transition: border 0.3s ease;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+
+}
+
+.hoverCard-main-container:hover {
+    background-color: #ff0000;
+    border-color: #ff0000;
+}
+
+.blog-article-item {
+    width: 380px;
+    height: 500px;
+    flex-shrink: 0;
+    background: linear-gradient(10deg, #231655 22.16%, rgba(53, 12, 129, 0.20) 92.7%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    /* margin-top: 64px; */
+    flex-direction: column;
+    /* Make items stack vertically */
+    justify-content: space-between;
+}
+
+.blog-article-item-div {
+    width: 360px;
+    height: 500px;
+    flex-shrink: 0;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: self-start;
+
+}
+
+.blog-article-title {
+    width: 336px;
+    color: var(--ffffff, #FFF);
+    font-family: Helvetica Neue;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.2px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.blog-article-description {
+    width: 296px;
+    flex-shrink: 0;
+    color: var(--f-1-deff, #DBD1F1);
+    font-family: Helvetica Neue;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.blog-article-item-learnMore {
+    width: 380px;
+    height: 88px;
+    flex-shrink: 0;
+    border-top: 2px solid var(--ffffff, #FFF);
+    border-bottom: 2px solid var(--ffffff, #FFF);
+    margin-bottom: 2px;
+    /* margin-left: -24.5px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    /* Add transition for background color and border color */
+}
+
+.blog-article-item-learnMore:hover {
+    background-color: #ff0000;
+    border-color: #ff0000;
+}
+
+.blog-article-learn-more {
+    color: var(--ffffff, #FFF);
+    text-align: center;
+    font-family: Helvetica Neue;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.blog-article-item-learnMore img {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+/* styles.css */
+
+.hoverCard-container {
+    position: relative;
+    display: inline-block;
+}
+
+.hoverCard-main-container {
+    /* ... your existing styles ... */
+    border: 2px solid #FFF;
+    background:
+        linear-gradient(10deg, #231655 22.16%, rgba(53, 12, 129, 0.20) 92.7%),
+        linear-gradient(89deg, #E64124 0.72%, #3F1BDD 69.33%);
+    /* Two linear gradients */
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+.hoverCard-container:hover .hoverCard-main-container {
+    border-color: #ff0000;
+    background:
+        linear-gradient(10deg, #231655 22.16%, rgba(53, 12, 129, 0.20) 92.7%),
+        linear-gradient(89deg, #E64124 0.72%, #3F1BDD 69.33%), #ff0000;
+    /* Change border color and add two linear gradients on hover */
+}
+
+.blog-article-item-learnMore {
+    /* ... your existing styles ... */
+    transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.hoverCard-container:hover .blog-article-item-learnMore {
+    background:
+        linear-gradient(10deg, #231655 22.16%, rgba(53, 12, 129, 0.20) 92.7%),
+        linear-gradient(89deg, #E64124 0.72%, #3F1BDD 69.33%), #ff0000;
+    /* Change background and add two linear gradients on hover */
+    border-color: #ff0000;
+}
+
+/* ... the rest of your styles ... */

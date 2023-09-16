@@ -1,0 +1,35 @@
+.ProductDevelopment-main-container {
+    width: 1440px;
+    background-color: #0F051D;
+}
+
+.ProductDevelopment-container {
+    width: 1440px;
+    padding: 112px;
+    padding-top: 80px;
+}
+
+.ProductDevelopment-text-styles {
+    color: var(--ffffff, #FFF);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Helvetica Neue;
+    font-size: 43px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 56px;
+    /* 130.233% */
+    letter-spacing: -0.5px;
+}
+
+.ProductDevelopment-card-row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1315px;
+}
+
+.ProductDevelopment-card-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    margin-right: 32px;
+}

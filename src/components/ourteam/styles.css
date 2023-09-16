@@ -1,0 +1,94 @@
+.meet-teems {
+    background: var(--0-f-051-d, #0F051D);
+    width: 1440px;
+    padding-bottom: 90px;
+}
+
+.meet-the-teem-rowText {
+    width: 271px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 112px;
+}
+
+.meet-the-teem-rowText img {
+    width: 100px;
+    height: 1px;
+    flex-shrink: 0;
+    margin-top: 98px;
+}
+
+.our-teem-div {
+    width: 1216px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 112px;
+    margin-right: 112px;
+}
+
+.our-teem-text {
+    color: var(--ffffff, #FFF);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Helvetica Neue;
+    font-size: 43px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: -0.5px;
+}
+
+.arrow-container {
+    display: flex;
+    gap: 10px;
+}
+
+.our-teem-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: self-start;
+    gap: 60px;
+    margin-top: 62px;
+}
+
+.team-member {
+    text-align: left;
+    flex-direction: column;
+    /* justify-content: flex-start; */
+    width: 270px;
+    height: 380px;
+}
+
+.team-member:nth-child(2n) {
+    margin-top: 50px;
+}
+
+.team-member img {
+    max-width: 100%;
+    width: 270px;
+    align-self: flex-start;
+    height: 280px;
+    margin-left: -40px;
+}
+
+.team-member-name {
+    color: var(--ffffff, #FFF);
+    font-family: Helvetica Neue;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    /* 125% */
+    letter-spacing: 0.2px;
+    margin-top: -20px;
+}
+
+.team-member-jobs {
+    color: var(--f-1-deff, #DBD1F1);
+    font-family: Helvetica Neue;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
