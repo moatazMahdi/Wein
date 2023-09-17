@@ -16,7 +16,7 @@ function MenuScreen() {
           <Link to="/services">Services</Link>
         </li>
         <li className="menu-item">
-          <Link to="/contact">Contact</Link>
+          <Link to="/contact">Contact Us</Link>
         </li>
         {/* Add more menu items as needed */}
       </ul>

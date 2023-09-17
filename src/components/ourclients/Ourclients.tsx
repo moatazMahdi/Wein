@@ -2,6 +2,7 @@ import { OurClients } from "../../Data/inedx";
 import RightArow from "../../assets/images/rightArow.svg";
 import LiftArow from "../../assets/images/laftArow.svg";
 import "./styles.css";
+
 const Ourclients = () => {
   return (
     <div className="our-client-contener-main">

@@ -50,6 +50,7 @@ const About = () => {
       </div>
     );
   };
+
   const renderBlog = () => {
     return (
       <div className="blog-container">
@@ -71,7 +72,7 @@ const About = () => {
                 <div className="blog-article-item-div">
                   <p>{item.name}</p>
                   <p className="blog-article-item-p">{item.description}</p>
-                  <div className="blog-article-item-learnMore">
+                  <div className="blog-article-item-learnMore-botton">
                     <p>Learn more</p>
                     <img src={ArowIcon} />
                   </div>
@@ -92,7 +93,6 @@ const About = () => {
               backgroundColor="transparent"
               color="#fff"
               onClick={() => {
-                // Define your click event handler here
                 alert("Senddddddddddd ");
               }}
             />
@@ -101,6 +101,7 @@ const About = () => {
       </div>
     );
   };
+
   return (
     <div className="about-main-container">
       <div className="about-container">

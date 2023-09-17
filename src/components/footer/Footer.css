@@ -73,3 +73,8 @@
     display: flex;
     margin-left: 120px;
 }
+
+.link-no-style {
+    text-decoration: none;
+    color: inherit;
+}

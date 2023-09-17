@@ -6,7 +6,6 @@ import Dish from "../assets/images/ourClients/dish.svg";
 import Kcal from "../assets/images/ourClients/kcal.svg";
 import Makita from "../assets/images/ourClients/makita.svg";
 import Misharyalafasy from "../assets/images/ourClients/misharyalafasy.svg";
-import bnjvscjas from "../../public/assets/images/ProductDevelopment/Base.svg";
 
 interface WorkData {
   Strategy: string[];
@@ -89,7 +88,7 @@ export const ourTeemData = [
     image: "../../public/assets/images/about/teemfour.png",
   },
   {
-    name: "Marvin McKinney",
+    name: "Marvin McKinneyyyyyy",
     jobs: ["Co-creator"],
     image: "../../public/assets/images/about/teemone.png",
   },
@@ -107,6 +106,11 @@ export const ourTeemData = [
     name: "Floyd Milas",
     jobs: ["Co-creator"],
     image: "../../public/assets/images/about/teemfour.png",
+  },
+  {
+    name: "Marvin McKinney",
+    jobs: ["Co-creator"],
+    image: "../../public/assets/images/about/teemone.png",
   },
 ];
 

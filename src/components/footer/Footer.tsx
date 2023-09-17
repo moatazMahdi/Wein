@@ -1,6 +1,6 @@
 import "./Footer.css";
 import FooterLogo from "../../assets/images/footerlogo.svg";
-import React from "react";
+import { Link } from "react-router-dom";
 
 interface WorkCategory {
   name: string;
@@ -34,7 +34,14 @@ function Footer() {
                     <h2>{category}</h2>
                     <div className="footer-category-data">
                       {footerData[0][category].map((item, itemIndex) => (
-                        <p key={itemIndex}>{item}</p>
+                        <p key={itemIndex}>
+                          <Link
+                            to={`/${item.toLowerCase()}`}
+                            className="link-no-style"
+                          >
+                            {item}
+                          </Link>
+                        </p>
                       ))}
                     </div>
                   </div>
