@@ -4,6 +4,8 @@ import "./Navbar.css";
 import CustomButton from "../custombutton/customButton";
 import { useState } from "react";
 import MenuScreen from "../menu/menu";
+import { Link } from "react-router-dom"; // Import Link from React Router
+
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -17,7 +19,9 @@ const Navbar = () => {
   return (
     <div className="image-row">
       <div className="left-images">
-        <img src={Logo} alt="Logo" className="image" />
+        <Link to="/">
+          <img src={Logo} alt="Logo" className="image" />
+        </Link>
       </div>
       <div className="right-image">
         <div onClick={toggleMenu}>

@@ -8,11 +8,14 @@ import ProductDevelopment from "./pages/ProductDevelopment/ProductDevelopment";
 import ContactUs from "./pages/ContactUs/ContactUs";
 import Innovation from "./pages/Innovation/Innovation";
 import DigitalContent from "./pages/DigitalContent/DigitalContent";
+import OurWork from "./pages/OurWork/OurWork";
+import { BrowserRouter } from "react-router-dom";
+import RoutesNavegation from "./navegations/Routes";
 
 function App() {
   return (
     <>
-      <DigitalContent />
+      <RoutesNavegation />
     </>
   );
 }

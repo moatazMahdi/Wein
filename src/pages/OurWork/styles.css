@@ -1,0 +1,11 @@
+.ourWork-main-container {
+    background: var(--0-f-051-d, #0F051D);
+
+}
+
+.ourWork-container {
+    width: 1215px;
+    height: 1217px;
+    flex-shrink: 0;
+    padding: 112px;
+}

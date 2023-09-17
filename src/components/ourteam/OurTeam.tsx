@@ -3,16 +3,24 @@ import LiftArow from "../../assets/images/laftArow.svg";
 import Rowline from "../../assets/images/about/rowlinewithoutcolor.svg";
 import { ourTeemData } from "../../Data/inedx";
 import "./styles.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const OurTeam = () => {
   const [startIndex, setStartIndex] = useState(0);
+  const [data, setData] = useState(ourTeemData);
+
   const itemsPerPage = 4;
+
   const handleNextClick = () => {
+    console.log("Next button clicked");
+
     if (startIndex + itemsPerPage < ourTeemData.length) {
+      console.log("hui");
+
       setStartIndex(startIndex + itemsPerPage);
     }
   };
+  console.log(startIndex);
 
   const handlePrevClick = () => {
     if (startIndex - itemsPerPage >= 0) {
@@ -20,10 +28,17 @@ const OurTeam = () => {
     }
   };
 
-  const visibleTeamMembers = ourTeemData.slice(
-    startIndex,
-    startIndex + itemsPerPage
-  );
+  useEffect(() => {
+    console.log(startIndex);
+
+    const visibleTeamMembers = ourTeemData.slice(
+      startIndex,
+      startIndex + itemsPerPage
+    );
+    console.log(visibleTeamMembers);
+
+    setData([...visibleTeamMembers]);
+  }, [startIndex]);
 
   return (
     <div className="meet-teems">
@@ -40,7 +55,7 @@ const OurTeam = () => {
       </div>
       <div className="our-team">
         <div className="our-teem-row">
-          {visibleTeamMembers.map((teamMember, index) => (
+          {data.map((teamMember, index) => (
             <div className="team-member" key={index}>
               <img src={teamMember.image} alt={teamMember.name} />
               <p className="team-member-name">{teamMember.name}</p>

@@ -5,12 +5,9 @@ import Bing from "../../assets/images/bing.svg";
 import Google from "../../assets/images/google.svg";
 import Hubsopt from "../../assets/images/hubsopt.svg";
 import Colum from "../../assets/images/colum.svg";
-// import WorldImage from "../../assets/images/worldbg.svg";
-import { OurWorkData, OurClients } from "../../Data/inedx";
-import RightArow from "../../assets/images/rightArow.svg";
-import LiftArow from "../../assets/images/laftArow.svg";
+import { OurWorkData } from "../../Data/inedx";
 import Ourclients from "../ourclients/Ourclients";
-
+import { useNavigate } from "react-router-dom";
 interface WorkCategory {
   name: string;
   items: string[];
@@ -76,6 +73,7 @@ const renderWorldSecction = () => {
   );
 };
 const Body = () => {
+  const navigate = useNavigate();
   const brands = [Facebook, Google, Adobe, Hubsopt, Bing];
 
   return (
