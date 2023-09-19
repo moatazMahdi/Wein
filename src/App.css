@@ -1,3 +1,8 @@
-.app-main {
-    background-color: black;
+.Main-App {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    background: var(--0-f-051-d, #0F051D);
+    justify-content: center;
+    align-items: center;
 }

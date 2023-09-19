@@ -14,7 +14,6 @@ const renderDigitalContent = () => {
           {StrategyData.map((items) => {
             return (
               <div key={items.id} className="digitalContent-card-container">
-                {/* <img src={items.image} alt={items.title} /> */}
                 <HoverCard
                   image={items.image}
                   title={items.title}

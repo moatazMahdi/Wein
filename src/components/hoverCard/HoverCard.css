@@ -13,7 +13,7 @@
     border-color: #ff0000;
 }
 
-.blog-article-item {
+.hoverCard-article-item {
     width: 380px;
     height: 500px;
     flex-shrink: 0;
@@ -29,7 +29,7 @@
     justify-content: space-between;
 }
 
-.blog-article-item-div {
+.hoverCard-article-item-div {
     width: 360px;
     height: 500px;
     flex-shrink: 0;
@@ -41,7 +41,7 @@
 
 }
 
-.blog-article-title {
+.hoverCard-article-title {
     width: 336px;
     color: var(--ffffff, #FFF);
     font-family: Helvetica Neue;
@@ -54,7 +54,7 @@
     margin-right: 24px;
 }
 
-.blog-article-description {
+.hoverCard-article-description {
     width: 296px;
     flex-shrink: 0;
     color: var(--f-1-deff, #DBD1F1);
@@ -67,7 +67,7 @@
     margin-right: 24px;
 }
 
-.blog-article-item-learnMore {
+.hoverCard-article-item-learnMore {
     width: 380px;
     height: 88px;
     flex-shrink: 0;
@@ -82,12 +82,12 @@
     /* Add transition for background color and border color */
 }
 
-.blog-article-item-learnMore:hover {
+.hoverCard-article-item-learnMore:hover {
     background-color: #ff0000;
     border-color: #ff0000;
 }
 
-.blog-article-learn-more {
+.hoverCard-article-learn-more {
     color: var(--ffffff, #FFF);
     text-align: center;
     font-family: Helvetica Neue;
@@ -97,7 +97,7 @@
     line-height: normal;
 }
 
-.blog-article-item-learnMore img {
+.hoverCard-article-item-learnMore img {
     margin-left: 10px;
     margin-bottom: 10px;
 }
@@ -129,12 +129,12 @@
     /* Change border color and add two linear gradients on hover */
 }
 
-.blog-article-item-learnMore {
+.hoverCard-article-item-learnMore {
     /* ... your existing styles ... */
     transition: background 0.3s ease, border-color 0.3s ease;
 }
 
-.hoverCard-container:hover .blog-article-item-learnMore {
+.hoverCard-container:hover .hoverCard-article-item-learnMore {
     background:
         linear-gradient(10deg, #231655 22.16%, rgba(53, 12, 129, 0.20) 92.7%),
         linear-gradient(89deg, #E64124 0.72%, #3F1BDD 69.33%), #ff0000;

@@ -1,5 +1,5 @@
 .image-row {
-    width: 1440px;
+    width: auto;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -50,24 +50,16 @@
     font-size: 16px;
 }
 
-/* styles.css */
 .custom-button {
     background-color: #0074d9;
-    /* Background color */
     color: white;
-    /* Text color */
     padding: 10px 20px;
-    /* Padding */
     border: none;
-    /* Remove default button border */
     cursor: pointer;
-    /* Change cursor on hover */
 }
 
-/* Style for button when hovered */
 .custom-button:hover {
     background-color: #0056b3;
-    /* Hover background color */
 }
 
 @media (max-width: 375px) {
@@ -75,7 +67,7 @@
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
-        width: 100vw;
+        width: auto;
     }
 
     .left-images {

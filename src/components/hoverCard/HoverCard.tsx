@@ -1,4 +1,4 @@
-import "./styles.css"; // Import your CSS file
+import "./HoverCard.css";
 import ArrowIcon from "../../assets/images/whitearrow.svg";
 
 interface hoverCardProps {
@@ -13,12 +13,12 @@ const HoverCard = ({ image, title, description }: hoverCardProps) => {
         className="hoverCard-main-container"
         style={{ backgroundImage: `url(${image})` }}
       >
-        <div className="blog-article-item">
-          <div className="blog-article-item-div">
-            <p className="blog-article-title">{title}</p>
-            <p className="blog-article-description">{description}</p>
-            <div className="blog-article-item-learnMore">
-              <p className="blog-article-learn-more">Learn more</p>
+        <div className="hoverCard-article-item">
+          <div className="hoverCard-article-item-div">
+            <p className="hoverCard-article-title">{title}</p>
+            <p className="hoverCard-article-description">{description}</p>
+            <div className="hoverCard-article-item-learnMore">
+              <p className="hoverCard-article-learn-more">Learn more</p>
               <img src={ArrowIcon} alt="Arrow Icon" />
             </div>
           </div>

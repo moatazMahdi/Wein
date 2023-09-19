@@ -3,15 +3,18 @@ import CustomButton from "../custombutton/customButton";
 import Navbar from "../navbar/Navbar";
 import Rowline from "../../assets/images/row.svg";
 import Discover from "../../assets/images/discover.svg";
+import { useTranslation } from "react-i18next";
+
 const Header = () => {
+  const { t } = useTranslation();
   return (
     <div className="home-contener-main">
       <Navbar />
       <div className="home-contener">
-        <p className="text-center">Creating digital products and</p>
-        <p className="text-Scaling">Scaling Intelligently</p>
+        <p className="text-center">{t("digital_products")}</p>
+        <p className="text-Scaling">{t("scaling_Intelligently")}</p>
         <p className="text-Together">
-          Together we will go to conquer the
+          {t("together_conquer")}
           <br />
           mountain peaks!
         </p>

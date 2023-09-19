@@ -19,25 +19,27 @@ const renderTags = () => {
       <div className="blog-main-rows">
         {OurBlogs.map((blogs) => {
           return (
-            <div className="blog-main-card">
-              <img src={blogs.image} className="blog-main-card-img" />
-              <div className="blog-main-card-container">
-                <p className="blog-main-card-title">{blogs.title}</p>
-                <p className="blog-main-card-description">
-                  {blogs.description}
-                </p>
-                <div className="blog-main-card-avatarSection">
-                  <div className="blog-card-username-section">
-                    <img src={blogs.userImage} />
-                    <div className="blog-user-name-section">
-                      <p className="blog-user-name-section-p">{blogs.name}</p>
-                      <div className="blog-jobtitle-row">
-                        <img src={CorrectIcon} />
-                        <p>{blogs.jobtitle}</p>
+            <div className="blog-main-card-wrapper">
+              <div className="blog-main-card">
+                <img src={blogs.image} className="blog-main-card-img" />
+                <div className="blog-main-card-container">
+                  <p className="blog-main-card-title">{blogs.title}</p>
+                  <p className="blog-main-card-description">
+                    {blogs.description}
+                  </p>
+                  <div className="blog-main-card-avatarSection">
+                    <div className="blog-card-username-section">
+                      <img src={blogs.userImage} />
+                      <div className="blog-user-name-section">
+                        <p className="blog-user-name-section-p">{blogs.name}</p>
+                        <div className="blog-jobtitle-row">
+                          <img src={CorrectIcon} />
+                          <p>{blogs.jobtitle}</p>
+                        </div>
                       </div>
                     </div>
+                    <p className="blog-card-date">{blogs.date}</p>
                   </div>
-                  <p className="blog-card-date">{blogs.date}</p>
                 </div>
               </div>
             </div>
@@ -66,7 +68,7 @@ const renderTags = () => {
   );
 };
 
-const Bolg = () => {
+const Blog = () => {
   return (
     <div className="blogs-container">
       <Navbar />
@@ -88,4 +90,4 @@ const Bolg = () => {
   );
 };
 
-export default Bolg;
+export default Blog;

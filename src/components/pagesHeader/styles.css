@@ -1,14 +1,13 @@
 .PagesHeader-main-container {
-    width: 1440px;
+    width: auto;
     background-image: url('../../assets/images/about/aboutHeader.png');
-    width: 1440px;
-    height: 100vh;
+    height: 689px;
 }
 
 .PagesHeader-container {
     background: rgba(9, 6, 43, 0.90);
-    width: 1440px;
-    height: 100vh;
+    width: auto;
+    height: 689px;
     opacity: 0.7;
 }
 
@@ -48,7 +47,7 @@
 }
 
 .PagesHeader-sub-Descrpion {
-    width: 1215px;
+    width: auto;
     color: var(--f-1-deff, #DBD1F1);
     font-family: Helvetica Neue;
     font-size: 22px;
