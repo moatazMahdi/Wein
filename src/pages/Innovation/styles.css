@@ -3,7 +3,7 @@
 }
 
 .innovation-crads-container {
-    width: 1440px;
+    width: 100%;
     padding: 112px;
     padding-top: 80px;
 }
@@ -21,15 +21,16 @@
 }
 
 .innovation-crads-container {
-    width: 1440px;
+    width: 100%;
     padding: 112px;
     padding-top: 80px;
+    padding-right: 20px;
 }
 
 .innovation-card-row {
     display: flex;
     flex-wrap: wrap;
-    width: 1315px;
+    width: 100%;
 }
 
 .innovation-card-container {

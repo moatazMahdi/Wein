@@ -12,8 +12,6 @@ const OurTeam = () => {
   const itemsPerPage = 4;
 
   const handleNextClick = () => {
-    console.log("Next button clicked");
-
     if (startIndex + itemsPerPage < ourTeemData.length) {
       console.log("hui");
 

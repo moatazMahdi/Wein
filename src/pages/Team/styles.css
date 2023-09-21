@@ -1,0 +1,11 @@
+.team-main-container {
+    width: 100%;
+    background: #0F051D;
+}
+
+.team-container {
+    width: 100%;
+    /* background: #0F051D; */
+    /* background: radial-gradient(37.83% 37.83% at 50% 50%, #5D56C7 0%, rgba(6, 19, 45, 0.00) 100%); */
+    min-height: 200px;
+}

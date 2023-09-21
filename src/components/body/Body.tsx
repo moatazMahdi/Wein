@@ -35,6 +35,7 @@ const renderOurWork = () => {
     </div>
   );
 };
+
 const renderWorldSecction = () => {
   return (
     <div className="world-sction-container">

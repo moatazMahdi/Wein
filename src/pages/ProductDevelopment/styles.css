@@ -1,12 +1,13 @@
 .ProductDevelopment-main-container {
-    width: 1440px;
+    width: 100%;
     background-color: #0F051D;
 }
 
 .ProductDevelopment-container {
-    width: 1440px;
+    width: 100%;
     padding: 112px;
     padding-top: 80px;
+    padding-right: 20px;
 }
 
 .ProductDevelopment-text-styles {
@@ -24,7 +25,7 @@
 .ProductDevelopment-card-row {
     display: flex;
     flex-wrap: wrap;
-    width: 1315px;
+    width: 100%;
 }
 
 .ProductDevelopment-card-container {

@@ -16,7 +16,7 @@ const PagesHeader = ({ title, Descrpion, sub_Descrpion }: PagesHeaderProps) => {
         <Navbar />
         <div className="PagesHeader-text-container">
           <div className="PagesHeader-text-row">
-            <img src={Rowline} />
+            <img src={Rowline} alt="Image" />
             <p>{title}</p>
           </div>
           <p className="PagesHeader-text-demo">{Descrpion}</p>

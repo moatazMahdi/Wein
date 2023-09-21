@@ -2,7 +2,7 @@
     background-color: #0F051D;
     color: #fff;
     padding: 20px;
-    width: 1440px;
+    width: 100%;
 }
 
 .footer-row {
@@ -19,7 +19,7 @@
 }
 
 .footer-texts-container p {
-    width: 649px;
+    width: 85%;
     height: 41px;
     flex-shrink: 0;
     color: var(--White, #FFF);

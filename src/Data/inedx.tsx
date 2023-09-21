@@ -6,7 +6,7 @@ import Dish from "../assets/images/ourClients/dish.svg";
 import Kcal from "../assets/images/ourClients/kcal.svg";
 import Makita from "../assets/images/ourClients/makita.svg";
 import Misharyalafasy from "../assets/images/ourClients/misharyalafasy.svg";
-
+import Ourvd from "../../public/assets/images/ourwork/Base.svg";
 interface WorkData {
   Strategy: string[];
   Innovation: string[];
@@ -293,5 +293,168 @@ export const ProductDevelopmentData = [
     title: "Solution Personalization",
     description: "Thanks to never-ending piles of data & the amount of insight",
     image: "../../public/assets/images/ProductDevelopment/Base6.svg",
+  },
+];
+
+export const OurWorkdata = [
+  {
+    category: "UX Design",
+    projects: [
+      {
+        id: 0,
+        title: "You Still Have Time Movie Trailer",
+        description:
+          "A man haunted by his past and the event that brings them together.",
+        image: "../../public/assets/images/ourwork/Base.svg",
+      },
+      {
+        id: 1,
+        title: "You Still Have Time Movie Trailer",
+        description:
+          "A man haunted by his past and the event that brings them together.",
+        image: "../../public/assets/images/ourwork/Base.svg",
+      },
+      {
+        id: 2,
+        title: "You Still Have Time Movie Trailer",
+        description:
+          "A man haunted by his past and the event that brings them together.",
+        image: "../../public/assets/images/ourwork/Base.svg",
+      },
+      {
+        id: 3,
+        title: "You Still Have Time Movie Trailer",
+        description:
+          "A man haunted by his past and the event that brings them together.",
+        image: "../../public/assets/images/ourwork/Base.svg",
+      },
+      {
+        id: 4,
+        title: "You Still Have Time Movie Trailer",
+        description:
+          "A man haunted by his past and the event that brings them together.",
+        image: "../../public/assets/images/ourwork/Base.svg",
+      },
+    ],
+  },
+  {
+    category: "Web Development",
+    projects: [
+      {
+        id: 0,
+        title: "You Still Hjbvcdas dguwqhd hqwgdvwave Time Movie Trailer",
+        description:
+          "A man haunted by his past and the event that brings them together.",
+        image: "../../public/assets/images/ourwork/Base.svg",
+      },
+      {
+        id: 1,
+        title: "You Still Have Time Movie Trailer",
+        description:
+          "A man haunted by his past and the event that brings them together.",
+        image: "../../public/assets/images/ourwork/Base.svg",
+      },
+      {
+        id: 2,
+        title: "You Still Have Time Movie Trailer",
+        description:
+          "A man haunted by his past and the event that brings them together.",
+        image: "../../public/assets/images/ourwork/Base.svg",
+      },
+      {
+        id: 3,
+        title: "You Still Have Time Movie Trailer",
+        description:
+          "A man haunted by his past and the event that brings them together.",
+        image: "../../public/assets/images/ourwork/Base.svg",
+      },
+      {
+        id: 4,
+        title: "You Still Have Time Movie Trailer",
+        description:
+          "A man haunted by his past and the event that brings them together.",
+        image: "../../public/assets/images/ourwork/Base.svg",
+      },
+    ],
+  },
+  {
+    category: "Media",
+    projects: [
+      {
+        id: 0,
+        title: "You Still Have Time Movie Trailer",
+        description:
+          "A man haunted by his past and the event that brings them together.",
+        image: "../../public/assets/images/ourwork/Base.svg",
+      },
+      {
+        id: 1,
+        title: "You Still Have Time Movie Trailer",
+        description:
+          "A man haunted by his past and the event that brings them together.",
+        image: "../../public/assets/images/ourwork/Base.svg",
+      },
+      {
+        id: 2,
+        title: "You Still Have Time Movie Trailer",
+        description:
+          "A man haunted by his past and the event that brings them together.",
+        image: "../../public/assets/images/ourwork/Base.svg",
+      },
+      {
+        id: 3,
+        title: "You Still Have Time Movie Trailer",
+        description:
+          "A man haunted by his past and the event that brings them together.",
+        image: "../../public/assets/images/ourwork/Base.svg",
+      },
+      {
+        id: 4,
+        title: "You Still Have Time Movie Trailer",
+        description:
+          "A man haunted by his past and the event that brings them together.",
+        image: "../../public/assets/images/ourwork/Base.svg",
+      },
+    ],
+  },
+  {
+    category: "Ecommerce",
+    projects: [
+      {
+        id: 0,
+        title: "You Still Have Time Movie Trailer",
+        description:
+          "A man haunted by his past and the event that brings them together.",
+        image: "../../public/assets/images/ourwork/Base.svg",
+      },
+      {
+        id: 1,
+        title: "You Still Have Time Movie Trailer",
+        description:
+          "A man haunted by his past and the event that brings them together.",
+        image: "../../public/assets/images/ourwork/Base.svg",
+      },
+      {
+        id: 2,
+        title: "You Still Have Time Movie Trailer",
+        description:
+          "A man haunted by his past and the event that brings them together.",
+        image: "../../public/assets/images/ourwork/Base.svg",
+      },
+      {
+        id: 3,
+        title: "You Still Have Time Movie Trailer",
+        description:
+          "A man haunted by his past and the event that brings them together.",
+        image: "../../public/assets/images/ourwork/Base.svg",
+      },
+      {
+        id: 4,
+        title: "You Still Have Time Movie Trailer",
+        description:
+          "A man haunted by his past and the event that brings them together.",
+        image: "../../public/assets/images/ourwork/Base.svg",
+      },
+    ],
   },
 ];

@@ -1,6 +1,7 @@
 import Contect from "../../components/contacts/Contect";
 import Footer from "../../components/footer/Footer";
 import PagesHeader from "../../components/pagesHeader/PagesHeader";
+import "./styles.css";
 
 const ContactUs = () => {
   return (
@@ -10,8 +11,10 @@ const ContactUs = () => {
         Descrpion="Supporting you on the path to digital transformation"
         sub_Descrpion="Do you have an idea but are struggling to execute it because of the complexities involved? Don't worry. We are here to solve your problem. We help entrepreneurs convert their ideas into products and services. Do you have an idea but are struggling to execute it because of the complexities involved? Don't worry. We are here to solve your problem. We help entrepreneurs convert their ideas into products and services. "
       />
-      <Contect />
-      <Footer />
+      <div className="ContactUs-container">
+        <Contect />
+        <Footer />
+      </div>
     </div>
   );
 };
