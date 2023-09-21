@@ -1,5 +1,4 @@
 import "./style.css";
-import Navbar from "../../components/navbar/Navbar";
 import Rowline from "../../assets/images/about/rowlinewithoutcolor.svg";
 import { companyCulture, ourblogArticles } from "../../Data/inedx";
 import RightImage from "../../../public/assets/images/about/rightimage.svg";
@@ -10,6 +9,7 @@ import Ourclients from "../../components/ourclients/Ourclients";
 import Contect from "../../components/contacts/Contect";
 import Footer from "../../components/footer/Footer";
 import OurTeam from "../../components/ourteam/OurTeam";
+import PagesHeader from "../../components/pagesHeader/PagesHeader";
 
 const About = () => {
   const rendercompanyCulture = () => {
@@ -104,18 +104,11 @@ const About = () => {
 
   return (
     <div className="about-main-container">
-      <div className="about-container">
-        <Navbar />
-        <div className="about-text-container">
-          <div className="about-text-row">
-            <img src={Rowline} />
-            <p>ABOUT</p>
-          </div>
-          <p className="about-text-demo">
-            We help businesses and brands succeed in the digital age.
-          </p>
-        </div>
-      </div>
+      <PagesHeader
+        title="ABOUT"
+        Descrpion="We help businesses and brands succeed in the digital age."
+        sub_Descrpion=""
+      />
       <div className="about-body-container">
         <OurTeam />
         {/* {renderMeetTeemSection()} */}

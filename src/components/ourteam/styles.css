@@ -1,25 +1,25 @@
 .meet-teems {
-    background: var(--0-f-051-d, #0F051D);
-    width: 1440px;
+    background: #0F051D;
+    width: 100%;
     padding-bottom: 90px;
 }
 
 .meet-the-teem-rowText {
-    width: 271px;
+    width: 20%;
     display: flex;
     flex-direction: row;
     margin-left: 112px;
 }
 
 .meet-the-teem-rowText img {
-    width: 100px;
+    width: 40%;
     height: 1px;
     flex-shrink: 0;
     margin-top: 98px;
 }
 
 .our-teem-div {
-    width: 1216px;
+    width: 90%;
     display: flex;
     justify-content: space-between;
     align-items: center;

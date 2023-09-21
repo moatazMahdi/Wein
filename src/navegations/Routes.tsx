@@ -8,6 +8,7 @@ import Innovation from "../pages/Innovation/Innovation";
 import OurWork from "../pages/OurWork/OurWork";
 import ProductDevelopment from "../pages/ProductDevelopment/ProductDevelopment";
 import Strategy from "../pages/Strategy/Strategy";
+import Team from "../pages/Team/Team";
 
 const RoutesNavegation = () => {
   return (
@@ -22,6 +23,7 @@ const RoutesNavegation = () => {
         <Route path="/Works" element={<OurWork />} />
         <Route path="/ProductDevelopment" element={<ProductDevelopment />} />
         <Route path="/Strategy" element={<Strategy />} />
+        <Route path="/Team" element={<Team />} />
       </Routes>
     </BrowserRouter>
   );

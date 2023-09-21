@@ -1,8 +1,9 @@
 .image-row {
-    width: 1440px;
+    width: 100%;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    background-color: transparent;
 }
 
 .left-images {
