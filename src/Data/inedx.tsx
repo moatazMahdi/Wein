@@ -458,3 +458,288 @@ export const OurWorkdata = [
     ],
   },
 ];
+
+export const OurTeamdata = [
+  {
+    country: "London",
+    team: [
+      {
+        id: "1",
+        name: "Morganne Flaherty",
+        jobTiltle: "UX Designer @Google",
+        image: "../../public/assets/images/team/Image.png",
+      },
+      {
+        id: "2",
+        name: "Foroogh Abdi",
+        jobTiltle: "UX Designer @Google",
+        image: "../../public/assets/images/team/Image2.jpg",
+      },
+      {
+        id: "3",
+        name: "Vikentiy Chaykovsky ",
+        jobTiltle: "UX Designer @Google",
+        image: "../../public/assets/images/team/Image3.jpg",
+      },
+      {
+        id: "4",
+        name: "Harrison Phillips",
+        jobTiltle: "UX Designer @Google",
+        image: "../../public/assets/images/team/Image4.png",
+      },
+      {
+        id: "5",
+        name: "Salma Fonseca",
+        jobTiltle: "Mobile App Developer",
+        image: "../../public/assets/images/team/Image.png",
+      },
+      {
+        id: "6",
+        name: "Harrison Phillips",
+        jobTiltle: "UX Designer @Google",
+        image: "../../public/assets/images/team/Image2.jpg",
+      },
+      {
+        id: "7",
+        name: "Salma Fonseca",
+        jobTiltle: "Mobile App Developer",
+        image: "../../public/assets/images/team/Image4.png",
+      },
+    ],
+  },
+  {
+    country: "USA",
+    team: [
+      {
+        id: "1",
+        name: "Moataz mahdi",
+        jobTiltle: "MObile App @Google",
+        image: "../../public/assets/images/about/teemtwo.png",
+      },
+      {
+        id: "2",
+        name: "Foroogh Abdi",
+        jobTiltle: "UX Designer @Google",
+        image: "../../public/assets/images/about/teemone.png",
+      },
+      {
+        id: "3",
+        name: "Vikentiy Chaykovsky ",
+        jobTiltle: "UX Designer @Google",
+        image: "../../public/assets/images/about/teemthree.png",
+      },
+      {
+        id: "4",
+        name: "Harrison Phillips",
+        jobTiltle: "UX Designer @Google",
+        image: "../../public/assets/images/about/teemone.png",
+      },
+      {
+        id: "5",
+        name: "Salma Fonseca",
+        jobTiltle: "Mobile App Developer",
+        image: "../../public/assets/images/about/teemthree.png",
+      },
+      {
+        id: "6",
+        name: "Harrison Phillips",
+        jobTiltle: "UX Designer @Google",
+        image: "../../public/assets/images/about/teemone.png",
+      },
+      {
+        id: "7",
+        name: "Salma Fonseca",
+        jobTiltle: "Mobile App Developer",
+        image: "../../public/assets/images/about/teemthree.png",
+      },
+    ],
+  },
+  {
+    country: "Ireland",
+    team: [
+      {
+        id: "1",
+        name: "Morganne Flaherty",
+        jobTiltle: "UX Designer @Google",
+        image: "../../public/assets/images/about/teemone.png",
+      },
+      {
+        id: "2",
+        name: "Foroogh Abdi",
+        jobTiltle: "UX Designer @Google",
+        image: "../../public/assets/images/about/teemtwo.png",
+      },
+      {
+        id: "3",
+        name: "Vikentiy Chaykovsky ",
+        jobTiltle: "UX Designer @Google",
+        image: "../../public/assets/images/about/teemthree.png",
+      },
+      {
+        id: "4",
+        name: "Harrison Phillips",
+        jobTiltle: "UX Designer @Google",
+        image: "../../public/assets/images/about/teemone.png",
+      },
+      {
+        id: "5",
+        name: "Salma Fonseca",
+        jobTiltle: "Mobile App Developer",
+        image: "../../public/assets/images/about/teemthree.png",
+      },
+      {
+        id: "6",
+        name: "Harrison Phillips",
+        jobTiltle: "UX Designer @Google",
+        image: "../../public/assets/images/about/teemone.png",
+      },
+      {
+        id: "7",
+        name: "Salma Fonseca",
+        jobTiltle: "Mobile App Developer",
+        image: "../../public/assets/images/team/base.jpg",
+      },
+    ],
+  },
+  {
+    country: "France",
+    team: [
+      {
+        id: "1",
+        name: "Morganne Flaherty",
+        jobTiltle: "UX Designer @Google",
+        image: "../../public/assets/images/about/teemone.png",
+      },
+      {
+        id: "2",
+        name: "Foroogh Abdi",
+        jobTiltle: "UX Designer @Google",
+        image: "../../public/assets/images/about/teemtwo.png",
+      },
+      {
+        id: "3",
+        name: "Vikentiy Chaykovsky ",
+        jobTiltle: "UX Designer @Google",
+        image: "../../public/assets/images/about/teemthree.png",
+      },
+      {
+        id: "4",
+        name: "Harrison Phillips",
+        jobTiltle: "UX Designer @Google",
+        image: "../../public/assets/images/about/teemone.png",
+      },
+      {
+        id: "5",
+        name: "Salma Fonseca",
+        jobTiltle: "Mobile App Developer",
+        image: "../../public/assets/images/about/teemthree.png",
+      },
+      {
+        id: "6",
+        name: "Harrison Phillips",
+        jobTiltle: "UX Designer @Google",
+        image: "../../public/assets/images/about/teemone.png",
+      },
+      {
+        id: "7",
+        name: "Salma Fonseca",
+        jobTiltle: "Mobile App Developer",
+        image: "../../public/assets/images/team/base.jpg",
+      },
+    ],
+  },
+  {
+    country: "UAE",
+    team: [
+      {
+        id: "1",
+        name: "Morganne Flaherty",
+        jobTiltle: "UX Designer @Google",
+        image: "../../public/assets/images/about/teemone.png",
+      },
+      {
+        id: "2",
+        name: "Foroogh Abdi",
+        jobTiltle: "UX Designer @Google",
+        image: "../../public/assets/images/about/teemtwo.png",
+      },
+      {
+        id: "3",
+        name: "Vikentiy Chaykovsky ",
+        jobTiltle: "UX Designer @Google",
+        image: "../../public/assets/images/about/teemthree.png",
+      },
+      {
+        id: "4",
+        name: "Harrison Phillips",
+        jobTiltle: "UX Designer @Google",
+        image: "../../public/assets/images/about/teemone.png",
+      },
+      {
+        id: "5",
+        name: "Salma Fonseca",
+        jobTiltle: "Mobile App Developer",
+        image: "../../public/assets/images/about/teemthree.png",
+      },
+      {
+        id: "6",
+        name: "Harrison Phillips",
+        jobTiltle: "UX Designer @Google",
+        image: "../../public/assets/images/about/teemone.png",
+      },
+      {
+        id: "7",
+        name: "Salma Fonseca",
+        jobTiltle: "Mobile App Developer",
+        image: "../../public/assets/images/team/base.jpg",
+      },
+    ],
+  },
+  {
+    country: "Lebanon",
+    team: [
+      {
+        id: "1",
+        name: "Morganne Flaherty",
+        jobTiltle: "UX Designer @Google",
+        image: "../../public/assets/images/about/teemone.png",
+      },
+      {
+        id: "2",
+        name: "Foroogh Abdi",
+        jobTiltle: "UX Designer @Google",
+        image: "../../public/assets/images/about/teemtwo.png",
+      },
+      {
+        id: "3",
+        name: "Vikentiy Chaykovsky ",
+        jobTiltle: "UX Designer @Google",
+        image: "../../public/assets/images/about/teemthree.png",
+      },
+      {
+        id: "4",
+        name: "Harrison Phillips",
+        jobTiltle: "UX Designer @Google",
+        image: "../../public/assets/images/about/teemone.png",
+      },
+      {
+        id: "5",
+        name: "Salma Fonseca",
+        jobTiltle: "Mobile App Developer",
+        image: "../../public/assets/images/about/teemthree.png",
+      },
+      {
+        id: "6",
+        name: "Harrison Phillips",
+        jobTiltle: "UX Designer @Google",
+        image: "../../public/assets/images/about/teemone.png",
+      },
+      {
+        id: "7",
+        name: "Salma Fonseca",
+        jobTiltle: "Mobile App Developer",
+        image: "../../public/assets/images/team/base.jpg",
+      },
+    ],
+  },
+];
