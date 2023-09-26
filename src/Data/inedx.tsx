@@ -6,7 +6,7 @@ import Dish from "../assets/images/ourClients/dish.svg";
 import Kcal from "../assets/images/ourClients/kcal.svg";
 import Makita from "../assets/images/ourClients/makita.svg";
 import Misharyalafasy from "../assets/images/ourClients/misharyalafasy.svg";
-import Ourvd from "../../public/assets/images/ourwork/Base.svg";
+
 interface WorkData {
   Strategy: string[];
   Innovation: string[];
@@ -741,5 +741,50 @@ export const OurTeamdata = [
         image: "../../public/assets/images/team/base.jpg",
       },
     ],
+  },
+];
+
+export const ourService = [
+  {
+    id: "1",
+    title: "Web Design",
+    description:
+      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words",
+    image: "../../public/assets/images/service/service.jpg",
+  },
+  {
+    id: "2",
+    title: "App Development",
+    description:
+      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words",
+    image: "../../public/assets/images/service/service.jpg",
+  },
+  {
+    id: "3",
+    title: "Design Thinking",
+    description:
+      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words",
+    image: "../../public/assets/images/service/service.jpg",
+  },
+  {
+    id: "1",
+    title: "Web Design",
+    description:
+      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words",
+    image: "../../public/assets/images/service/service.jpg",
+  },
+  {
+    id: "2",
+    title: "App Development",
+    description:
+      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words",
+    image: "../../public/assets/images/service/service.jpg",
+  },
+  {
+    id: "3",
+    title: "Design Thinking",
+    description:
+      "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words",
+    image: "../../public/assets/images/service/service.jpg",
   },
 ];
