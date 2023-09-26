@@ -1,5 +1,3 @@
-import React from "react";
-
 interface CustomButton {
   text: string;
   fontSize: string;
@@ -8,7 +6,7 @@ interface CustomButton {
   height: string;
   backgroundColor: string;
   color: string;
-  onClick: () => void; // Add onClick prop
+  onClick: () => void;
 }
 const CustomButton = ({
   text,
@@ -36,10 +34,34 @@ const CustomButton = ({
     width: width,
     height: height,
   };
+  const buttonStylewithBackground = {
+    backgroundColor:
+      "linear-gradient(89deg, #E64124 0.72%, #3F1BDD 51.32%, #3F1BDD 98.86%)",
+    color: color,
+    padding: "10px 20px",
+    border: "2px solid #ffff",
+    cursor: "pointer",
+    fontSize: fontSize,
+    fontWeight: fontWeight,
+    textAlign: "center",
+    fontFamily: "Helvetica Neue",
+    fontStyle: "normal",
+    lineHeight: "normal",
+    letterSpacing: "1px",
+    width: width,
+    height: height,
+  };
+  const withBackground = true;
+  const buttonStyleToUse = withBackground
+    ? buttonStyle
+    : buttonStylewithBackground;
+
   return (
-    <button style={buttonStyle} onClick={onClick}>
-      {text}
-    </button>
+    <>
+      <button style={buttonStyleToUse} onClick={onClick}>
+        {text}
+      </button>
+    </>
   );
 };
 

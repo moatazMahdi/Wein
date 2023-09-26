@@ -40,7 +40,7 @@ function Contect() {
       <div className="contects-container-section-lift">
         <form onSubmit={handleSubmit} className="underline-form">
           <div className="underline-input">
-            <label htmlFor="name">Name:</label>
+            <label htmlFor="name">Name</label>
             <input
               type="text"
               name="name"
@@ -54,7 +54,7 @@ function Contect() {
             />
           </div>
           <div className="underline-input">
-            <label htmlFor="email">Email:</label>
+            <label htmlFor="email">Email</label>
             <input
               type="email"
               name="email"
@@ -69,7 +69,7 @@ function Contect() {
             />
           </div>
           <div className="underline-input">
-            <label htmlFor="message">Message:</label>
+            <label htmlFor="message">Share your comments </label>
             <textarea
               name="message"
               id="message"

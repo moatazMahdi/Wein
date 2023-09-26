@@ -9,11 +9,11 @@ function MenuScreen() {
         <li className="menu-item">
           <Link to="/">Home</Link>
         </li>
-        <li className="menu-item" onClick={() => navigate("./About")}>
-          <Link to="/About">About</Link>
+        <li className="menu-item">
+          <Link to="/about">About</Link>
         </li>
         <li className="menu-item">
-          <Link to="/services">Services</Link>
+          <Link to="/service">Service</Link>
         </li>
         <li className="menu-item">
           <Link to="/contact">Contact Us</Link>
