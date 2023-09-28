@@ -1,5 +1,5 @@
 .main-contener {
-    width: 100%;
+    width: auto;
     background-color: #000;
     padding-top: 42px;
     display: flex;
@@ -24,8 +24,7 @@
     display: flex;
     justify-content: space-between;
     margin-top: 228px;
-    margin-left: 112px;
-    margin-right: 112px;
+    margin: 112px;
 }
 
 .text-one {
@@ -36,7 +35,7 @@
     font-weight: 300;
     line-height: normal;
     letter-spacing: 0.5px;
-    width: 379px;
+    max-width: 379px;
     height: auto;
     flex-shrink: 0;
 }
@@ -51,16 +50,16 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    width: 744px;
-    height: 847px;
+    max-width: 744px;
+    max-height: 847px;
     flex-shrink: 0;
     margin-left: 58px;
 
 }
 
 .text-row-one {
-    width: 317px;
-    height: 199px;
+    max-width: 317px;
+    max-height: 199px;
     flex-shrink: 0;
     color: #FFF;
     font-family: Helvetica Neue;
@@ -72,8 +71,8 @@
 }
 
 .text-row-two {
-    width: 744px;
-    height: 504px;
+    max-width: 744px;
+    max-height: 504px;
     flex-shrink: 0;
     color: #FFF;
     font-size: 64px;
@@ -84,7 +83,7 @@
 }
 
 .category-container {
-    width: 100%;
+    width: auto;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -101,8 +100,8 @@
 }
 
 .category h2 {
-    width: 230px;
-    height: 80px;
+    max-width: 230px;
+    max-height: 80px;
     flex-shrink: 0;
     font-size: 35px;
     font-style: normal;
@@ -122,7 +121,7 @@
 }
 
 .our-work-div-container {
-    width: 100%;
+    width: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -170,12 +169,12 @@
     margin-left: 10px;
     margin-right: 10px;
     justify-content: space-between;
-    width: 120px;
+    max-width: 120px;
 }
 
 .our-clients-arow img {
-    width: 50px;
-    height: 50px;
+    max-width: 50px;
+    max-height: 50px;
 
 }
 
@@ -183,7 +182,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    width: 100%;
+    width: auto;
 }
 
 .our-clients-logo {
@@ -191,7 +190,7 @@
     flex-direction: column;
     align-items: center;
     margin: 10px;
-    width: calc(25% - 20px);
+    /* width: calc(25% - 20px); */
     height: 120px;
     margin-top: 50px;
 }
@@ -199,14 +198,14 @@
 .world-sction-container {
     background-image: url("../../assets/images/worldbg.svg");
     height: 677px;
-    width: 100%;
+    width: auto;
     /* margin-left: 32px;
     margin-right: 40px; */
     background-size: cover;
 }
 
 .world-sction-main {
-    width: 1368px;
+    max-width: 1368px;
     height: auto;
     justify-content: center;
     align-items: center;
@@ -218,7 +217,7 @@
 }
 
 .world-sction-main h1 {
-    width: 827px;
+    max-width: 827px;
     color: #FFF;
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: Helvetica Neue;
@@ -233,7 +232,7 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
-    width: 900px;
+    max-width: 900px;
     margin-top: 65px;
 
 }
@@ -251,7 +250,7 @@
 }
 
 .image-between {
-    max-width: 100%;
+    max-width: auto;
     height: 194px;
     margin: 0 10px;
     margin-right: 50px;
@@ -287,7 +286,7 @@
 
 @media (max-width: 480px) {
     .main-contener {
-        width: 100%;
+        width: auto;
         background-color: #000;
         display: flex;
         flex-direction: column;
@@ -337,7 +336,7 @@
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        width: 100%;
+        width: auto;
         height: 0%;
         flex-shrink: 0;
         margin-left: 0px;
@@ -376,18 +375,18 @@
     }
 
     .category-container {
-        width: 100%;
+        width: auto;
         flex-wrap: nowrap;
         overflow-x: auto;
-        margin-left: 20px;
-        margin-top: 60px;
+        margin-left: 0px;
+        margin-top: 0px;
     }
 
     .category {
         margin: 10px;
         padding: 10px;
         border-radius: 5px;
-        width: 70%;
+        max-width: 70%;
 
     }
 
@@ -409,7 +408,7 @@
     .category-data {
         display: flex;
         flex-direction: column;
-        width: 220px;
+        max-width: 220px;
     }
 
     .our-work-div-container {
@@ -461,12 +460,12 @@
         margin-left: 10px;
         margin-right: 10px;
         justify-content: space-between;
-        width: 120px;
+        max-width: 120px;
     }
 
     .our-clients-arow img {
-        width: 50px;
-        height: 50px;
+        max-width: 50px;
+        max-height: 50px;
 
     }
 
@@ -474,7 +473,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        width: 100%;
+        max-width: auto;
     }
 
     .our-clients-logo {
@@ -483,21 +482,22 @@
         align-items: center;
         margin: 10px;
         width: calc(25% - 20px);
-        height: 120px;
+        max-height: 120px;
         margin-top: 50px;
     }
 
     .world-sction-container {
         background-image: url("../../assets/images/homebackGround/worldbg.svg");
         height: auto;
-        width: 100%;
-        margin-left: 8px;
-        margin-right: 20px;
+        width: auto;
+        margin-left: 0px;
+        margin-right: 0px;
         margin-top: 60px;
+        background-size: cover;
     }
 
     .world-sction-main {
-        width: 100%;
+        max-width: auto;
         height: auto;
         justify-content: center;
         align-items: center;
@@ -509,7 +509,7 @@
     }
 
     .world-sction-main h1 {
-        width: 300px;
+        max-width: 300px;
         color: #FFF;
         font-feature-settings: 'clig' off, 'liga' off;
         font-family: Helvetica Neue;
@@ -525,7 +525,7 @@
         /* Stack elements vertically */
         align-items: center;
         /* Center elements horizontally */
-        width: 100%;
+        width: auto;
         /* Full width */
         margin: 20px;
         /* Adjust vertical margin */
@@ -539,7 +539,7 @@
     }
 
     .image-between {
-        max-width: 100%;
+        max-width: auto;
         height: 125px;
         /* Allow image height to adjust */
         margin: 0;

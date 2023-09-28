@@ -1,15 +1,15 @@
 .PagesHeader-main-container {
-    width: 100%;
+    width: auto;
     background-image: url('../../assets/images/about/aboutHeader.png');
-    height: 100%;
-    background-size: 100%;
+    height: auto;
+    background-size: cover;
     background-repeat: repeat-x;
     max-height: 100vh;
 
 }
 
 .PagesHeader-Navbar {
-    width: 100%;
+    width: auto;
     position: -webkit-sticky;
     position: sticky;
     top: -1px;
@@ -17,13 +17,13 @@
 
 .PagesHeader-container {
     background: rgba(9, 6, 43, 0.90);
-    width: 100%;
+    width: auto;
     height: 95vh;
     opacity: 0.7;
 }
 
 .PagesHeader-text-container {
-    width: 85%;
+    max-width: 85%;
     margin-left: 112px;
     margin-top: 170px;
     min-height: 20px;
@@ -63,7 +63,7 @@
 }
 
 .PagesHeader-sub-Descrpion {
-    width: 80%;
+    max-width: 80%;
     color: var(--f-1-deff, #DBD1F1);
     font-family: Helvetica Neue;
     font-size: 22px;

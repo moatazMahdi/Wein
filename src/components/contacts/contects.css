@@ -1,5 +1,5 @@
 .contects-container {
-    width: 100%;
+    width: auto;
     height: 623px;
     flex-shrink: 0;
     background: linear-gradient(58deg, #E54124 6.46%, #3F1BDD 35.51%);
@@ -8,8 +8,8 @@
 }
 
 .contects-container-section-right {
-    width: 538px;
-    height: 337px;
+    max-width: 538px;
+    max-height: 337px;
     flex-shrink: 0;
     margin-left: 111px;
     margin-top: 142PX;
@@ -21,7 +21,7 @@
 }
 
 .contects-container-section-right h1 {
-    width: 538px;
+    max-width: 538px;
     color: #FFF;
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: Helvetica Neue;
@@ -35,7 +35,7 @@
 }
 
 .contects-container-section-right h3 {
-    width: 538px;
+    max-width: 538px;
     color: #FFF;
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: Helvetica Neue;
@@ -60,8 +60,8 @@
 }
 
 .contects-container-section-lift {
-    width: 449px;
-    height: 355px;
+    width: auto;
+    height: auto;
     flex-shrink: 0;
     margin-right: 111px;
     margin-top: 144px;
@@ -78,7 +78,8 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
-    width: 449px;
+    width: auto;
+
 }
 
 .underline-input label {
@@ -109,7 +110,7 @@
 
 @media (max-width: 480px) {
     .contects-container {
-        width: 100%;
+        width: auto;
         height: auto;
         flex-shrink: 0;
         background: linear-gradient(58deg, #E54124 6.46%, #3F1BDD 35.51%);
@@ -128,7 +129,7 @@
     }
 
     .contects-container-section-right h1 {
-        width: 306px;
+        max-width: 306px;
         color: #FFF;
         font-feature-settings: 'clig' off, 'liga' off;
         font-family: Helvetica Neue;
@@ -141,7 +142,7 @@
     }
 
     .contects-container-section-right h3 {
-        width: 293px;
+        max-width: 293px;
         color: #FFF;
         font-feature-settings: 'clig' off, 'liga' off;
         font-family: Helvetica Neue;
@@ -184,7 +185,7 @@
         display: flex;
         flex-direction: column;
         margin-bottom: 20px;
-        width: 293px;
+        width: auto;
     }
 
     .underline-input label {

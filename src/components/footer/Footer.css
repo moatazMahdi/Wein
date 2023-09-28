@@ -2,7 +2,7 @@
     background-color: #0F051D;
     color: #fff;
     padding: 20px;
-    width: 100%;
+    width: auto;
 }
 
 .footer-row {
@@ -19,8 +19,7 @@
 }
 
 .footer-texts-container p {
-    width: 85%;
-    height: 41px;
+    max-width: 85%;
     flex-shrink: 0;
     color: var(--White, #FFF);
     font-feature-settings: 'clig' off, 'liga' off;
@@ -66,8 +65,12 @@
 }
 
 .footer-image {
-    width: 100%;
+    width: auto;
     text-align: center;
+}
+
+.footer-image img {
+    max-width: 80%;
 }
 
 .footer-data-container {
@@ -103,7 +106,7 @@
     }
 
     .footer-texts-container p {
-        width: 85%;
+        max-width: 85%;
         height: 41px;
         flex-shrink: 0;
         color: var(--White, #FFF);
@@ -154,7 +157,7 @@
     }
 
     .footer-image img {
-        width: 320px;
+        max-width: 320px;
     }
 
     .footer-data-container {

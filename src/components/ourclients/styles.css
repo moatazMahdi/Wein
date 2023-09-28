@@ -4,7 +4,7 @@
     margin-left: 112px;
     margin-right: 100px;
     margin-top: 129px;
-    height: 640px;
+    height: auto;
 }
 
 .our-client-contener-main h1 {
@@ -42,7 +42,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 100%;
+    width: auto;
 }
 
 .our-clients-logo {
