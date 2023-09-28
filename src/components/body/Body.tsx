@@ -82,7 +82,7 @@ const Body = () => {
       <div className="brands-row">
         {brands.map((item, index) => (
           <div key={index} className="container-Barnd-row">
-            <img src={item} />
+            <img src={item} alt="" />
           </div>
         ))}
       </div>

@@ -8,6 +8,13 @@
 
 }
 
+.PagesHeader-Navbar {
+    width: 100%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: -1px;
+}
+
 .PagesHeader-container {
     background: rgba(9, 6, 43, 0.90);
     width: 100%;

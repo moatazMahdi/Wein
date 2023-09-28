@@ -56,6 +56,11 @@ export const OurClients = [
   Makita,
   Dish,
   Almarasem,
+  Misharyalafasy,
+  Agalat,
+  Kcal,
+  Makita,
+  Bayantech,
 ];
 
 export const footerData = [

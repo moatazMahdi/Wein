@@ -6,7 +6,9 @@ import Discover from "../../assets/images/discover.svg";
 const Header = () => {
   return (
     <div className="home-contener-main">
-      <Navbar />
+      <div className="home-contener-Navbar">
+        <Navbar />
+      </div>
       <div className="home-contener">
         <div className="home-contan">
           <p className="text-center">Creating digital products and</p>
