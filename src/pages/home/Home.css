@@ -2,8 +2,7 @@
     background-color: hwb(0 0% 100%);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100vw;
-    height: 100vh;
+    width: auto;
 
 }
 

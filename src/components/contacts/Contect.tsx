@@ -91,7 +91,6 @@ function Contect() {
             backgroundColor="#fff"
             color="#3F1BDD"
             onClick={() => {
-              // Define your click event handler here
               alert("Senddddddddddd ");
             }}
           />

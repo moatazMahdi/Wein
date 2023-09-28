@@ -1,6 +1,6 @@
 .hoverCard-main-container {
-    width: 384px;
-    height: 500px;
+    width: auto;
+    /* max-height: 500px; */
     flex-shrink: 0;
     border: 2px solid #FFF;
     transition: border 0.3s ease;
@@ -13,7 +13,7 @@
     border-color: #ff0000;
 }
 
-.blog-article-item {
+.blog-hoverCared-item {
     width: 380px;
     height: 500px;
     flex-shrink: 0;
@@ -29,7 +29,7 @@
     justify-content: space-between;
 }
 
-.blog-article-item-div {
+.blog-hoverCared-item-div {
     width: 100%;
     height: 500px;
     flex-shrink: 0;
@@ -37,11 +37,9 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    align-items: self-start;
-    margin-top: -65px;
 }
 
-.blog-article-title {
+.blog-hoverCared-title {
     width: 336px;
     align-self: flex-end;
     color: var(--ffffff, #FFF);
@@ -54,7 +52,7 @@
     margin-left: 24px;
 }
 
-.blog-article-description {
+.blog-hoverCared-description {
     width: 336px;
     align-self: flex-start;
     color: var(--f-1-deff, #DBD1F1);
@@ -63,30 +61,28 @@
     font-style: normal;
     font-weight: 400;
     margin-left: -10px;
-    /* margin-left: 24px; */
-    /* margin-right: 24px; */
+    margin-left: 24px;
+    margin-right: 24px;
 }
 
-.blog-article-item-learnMore {
+.blog-hoverCared-item-learnMore {
     width: 380px;
     height: 88px;
     flex-shrink: 0;
     border-top: 2px solid var(--ffffff, #FFF);
     border-bottom: 2px solid var(--ffffff, #FFF);
-    margin-bottom: 1px;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: background-color 0.3s ease, border-color 0.3s ease;
-    margin-left: -32px;
 }
 
-.blog-article-item-learnMore:hover {
-    background-color: #ff0000;
-    border-color: #ff0000;
+.blog-hoverCared-item-learnMore:hover {
+    background-color: #3F1BDD;
+    border-color: #3F1BDD
 }
 
-.blog-article-learn-more {
+.blog-hoverCared-learn-more {
     color: var(--ffffff, #FFF);
     text-align: center;
     font-family: Helvetica Neue;
@@ -96,7 +92,7 @@
     line-height: normal;
 }
 
-.blog-article-item-learnMore img {
+.blog-hoverCared-item-learnMore img {
     margin-left: 10px;
     margin-bottom: 10px;
 }
@@ -112,8 +108,8 @@
     /* ... your existing styles ... */
     border: 2px solid #FFF;
     background:
-        linear-gradient(10deg, #231655 22.16%, rgba(53, 12, 129, 0.20) 92.7%),
-        linear-gradient(89deg, #E64124 0.72%, #3F1BDD 69.33%);
+        linear-gradient(10deg, #E64124 22.16%, #E64124 92.7%),
+        linear-gradient(89deg, #E64124 0.52%, #E64124 69.33%);
     /* Two linear gradients */
     background-origin: border-box;
     background-clip: content-box, border-box;
@@ -121,24 +117,24 @@
 }
 
 .hoverCard-container:hover .hoverCard-main-container {
-    border-color: #ff0000;
+    border-color: #3F1BDD;
     background:
-        linear-gradient(10deg, #231655 22.16%, rgba(53, 12, 129, 0.20) 92.7%),
-        linear-gradient(89deg, #E64124 0.72%, #3F1BDD 69.33%), #ff0000;
-    /* Change border color and add two linear gradients on hover */
+        linear-gradient(10deg, #E64124 22.16%, #E64124 92.7%),
+        linear-gradient(89deg, #E64124 0.52%, #E64124 69.33%), #3F1BDD
+        /* Change border color and add two linear gradients on hover */
 }
 
-.blog-article-item-learnMore {
+.blog-hoverCared-item-learnMore {
     /* ... your existing styles ... */
     transition: background 0.3s ease, border-color 0.3s ease;
 }
 
-.hoverCard-container:hover .blog-article-item-learnMore {
+.hoverCard-container:hover .blog-hoverCared-item-learnMore {
     background:
         linear-gradient(10deg, #231655 22.16%, rgba(53, 12, 129, 0.20) 92.7%),
-        linear-gradient(89deg, #E64124 0.72%, #3F1BDD 69.33%), #ff0000;
+        linear-gradient(89deg, #E64124 0.72%, #3F1BDD 69.33%), #3F1BDD;
     /* Change background and add two linear gradients on hover */
-    border-color: #ff0000;
+    border-color: #3F1BDD;
 }
 
 /* ... the rest of your styles ... */

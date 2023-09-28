@@ -1,25 +1,25 @@
 .meet-teems {
     background: #0F051D;
-    width: 100%;
+    width: auto;
     padding-bottom: 90px;
 }
 
 .meet-the-teem-rowText {
-    width: 20%;
+    max-width: 20%;
     display: flex;
     flex-direction: row;
     margin-left: 112px;
 }
 
 .meet-the-teem-rowText img {
-    width: 40%;
+    max-width: 40%;
     height: 1px;
     flex-shrink: 0;
     margin-top: 98px;
 }
 
 .our-teem-div {
-    width: 90%;
+    max-width: 90%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -56,8 +56,8 @@
     text-align: left;
     flex-direction: column;
     /* justify-content: flex-start; */
-    width: 270px;
-    height: 380px;
+    max-width: 270px;
+    max-height: 380px;
 }
 
 .team-member:nth-child(2n) {
@@ -65,8 +65,7 @@
 }
 
 .team-member img {
-    max-width: 100%;
-    width: 270px;
+    max-width: 270px;
     align-self: flex-start;
     height: 280px;
     margin-left: -40px;

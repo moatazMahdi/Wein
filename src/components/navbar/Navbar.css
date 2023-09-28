@@ -1,9 +1,11 @@
 .image-row {
-    width: 100%;
+    width: auto;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
     background-color: transparent;
+    /* position: absolute;
+    top: 0%; */
 }
 
 .left-images {
@@ -65,29 +67,29 @@
     /* Change cursor on hover */
 }
 
-/* Style for button when hovered */
 .custom-button:hover {
     background-color: #0056b3;
-    /* Hover background color */
 }
 
-@media (max-width: 375px) {
+@media (max-width: 600px) {
     .image-row {
+        width: 100%;
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
-        width: 100vw;
     }
 
     .left-images {
         display: flex;
         justify-content: flex-end;
         margin-top: 26px;
-        margin-left: 40px;
+        margin-left: 10px;
 
     }
 
     .image {
+        width: 72.001px;
+        height: 42px;
         max-width: 100%;
         height: auto;
         margin: 0 10px;
@@ -95,13 +97,15 @@
 
     .right-image {
         display: flex;
-        justify-content: space-between;
         align-items: center;
+        text-align: center;
         margin-top: 26px;
-        margin-right: 40px;
+        margin-right: -150px;
     }
 
     .menu-image {
+        width: 25px;
+        height: 26px;
         max-width: 100%;
         height: auto;
     }
@@ -109,4 +113,67 @@
     .CustomButton {
         display: none;
     }
+
+    /* 
+    .menu-close {
+        display: flex;
+        position: absolute;
+        right: 10px;
+
+    } */
+
+}
+
+
+@media (max-width: 480px) {
+    .image-row {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .left-images {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 26px;
+        margin-left: 10px;
+
+    }
+
+    .image {
+        width: 72.001px;
+        height: 42px;
+        max-width: 100%;
+        height: auto;
+        margin: 0 10px;
+    }
+
+    .right-image {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin-top: 26px;
+        margin-right: -150px;
+    }
+
+    .menu-image {
+        width: 25px;
+        height: 26px;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .CustomButton {
+        display: none;
+    }
+
+    /* 
+    .menu-close {
+        display: flex;
+        position: absolute;
+        right: 10px;
+
+    } */
+
 }

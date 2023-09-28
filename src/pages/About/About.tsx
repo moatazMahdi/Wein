@@ -23,7 +23,7 @@ const About = () => {
             to make a great output by this culture:
           </p>
           <div className="company-culture-container">
-            <div className="left-column" style={{ marginLeft: "170px" }}>
+            <div className="left-column">
               {companyCulture.slice(0, 3).map((text, index) => (
                 <div className="company-culture-service" key={index}>
                   <img src={RightImage} alt={`Image ${index}`} />
@@ -69,7 +69,7 @@ const About = () => {
                 className="blog-article-item"
                 style={{ backgroundImage: `url(${item.image})` }}
               >
-                <div className="blog-article-item-div">
+                <div className="blog-about-item-div">
                   <p>{item.name}</p>
                   <p className="blog-article-item-p">{item.description}</p>
                   <div className="blog-article-item-learnMore-botton">

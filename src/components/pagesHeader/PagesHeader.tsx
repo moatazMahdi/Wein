@@ -11,21 +11,25 @@ interface PagesHeaderProps {
 const PagesHeader = ({ title, Descrpion, sub_Descrpion }: PagesHeaderProps) => {
   const isShowen = true;
   return (
-    <div className="PagesHeader-main-container">
-      <div className="PagesHeader-container">
-        <Navbar />
-        <div className="PagesHeader-text-container">
-          <div className="PagesHeader-text-row">
-            <img src={Rowline} alt="Image" />
-            <p>{title}</p>
+    <>
+      <div className="PagesHeader-main-container">
+        <div className="PagesHeader-container">
+          <div className="PagesHeader-Navbar">
+            <Navbar />
           </div>
-          <p className="PagesHeader-text-demo">{Descrpion}</p>
-          {isShowen ? (
-            <p className="PagesHeader-sub-Descrpion"> {sub_Descrpion}</p>
-          ) : null}
+          <div className="PagesHeader-text-container">
+            <div className="PagesHeader-text-row">
+              <img src={Rowline} alt="Image" />
+              <p>{title}</p>
+            </div>
+            <p className="PagesHeader-text-demo">{Descrpion}</p>
+            {isShowen ? (
+              <p className="PagesHeader-sub-Descrpion"> {sub_Descrpion}</p>
+            ) : null}
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

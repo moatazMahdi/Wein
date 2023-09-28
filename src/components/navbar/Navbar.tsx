@@ -24,15 +24,19 @@ const Navbar = () => {
         </Link>
       </div>
       <div className="right-image">
-        <div onClick={toggleMenu}>
-          <img src={MenuIcon} alt="Menu" className="menu-image" />
-        </div>
+        {/* {isMenuOpen && (
+          <button className="menu-close" onClick={closeMenu}>
+            Close
+          </button>
+        )} */}
         {isMenuOpen && (
           <div className="menu-content">
-            <button className="menu-close" onClick={closeMenu}>
-              Close
-            </button>
-            <MenuScreen />
+            <MenuScreen closeMenu={closeMenu} />
+          </div>
+        )}
+        {!isMenuOpen && (
+          <div onClick={toggleMenu}>
+            <img src={MenuIcon} alt="Menu" className="menu-image" />
           </div>
         )}
         <div className="CustomButton">

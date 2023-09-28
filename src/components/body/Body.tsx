@@ -8,11 +8,14 @@ import Colum from "../../assets/images/colum.svg";
 import { OurWorkData } from "../../Data/inedx";
 import Ourclients from "../ourclients/Ourclients";
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 interface WorkCategory {
   name: string;
   items: string[];
 }
 const renderOurWork = () => {
+  const [visibleCategoryIndex, setVisibleCategoryIndex] = useState(0);
+
   const workCategories: WorkCategory[] = Object.keys(OurWorkData[0]).map(
     (category) => ({
       name: category,
@@ -20,10 +23,30 @@ const renderOurWork = () => {
     })
   );
 
+  const handleNextClick = () => {
+    if (visibleCategoryIndex < workCategories.length - 1) {
+      setVisibleCategoryIndex(visibleCategoryIndex + 1);
+    }
+  };
+
+  const handlePrevClick = () => {
+    if (visibleCategoryIndex > 0) {
+      setVisibleCategoryIndex(visibleCategoryIndex - 1);
+    }
+  };
+  const isMobile = window.innerWidth <= 480;
+
   return (
     <div className="category-container">
       {workCategories.map((categoryData, index) => (
-        <div key={index} className="category">
+        <div
+          key={index}
+          className="category"
+          // style={{
+          //   display:
+          //     index === visibleCategoryIndex || isMobile ? "block" : "none",
+          // }}
+        >
           <h2>{categoryData.name}</h2>
           <div className="category-data">
             {categoryData.items.map((item, itemIndex) => (
@@ -32,6 +55,22 @@ const renderOurWork = () => {
           </div>
         </div>
       ))}
+      {/* {isMobile && (
+        <div className="navigation-buttons">
+          <button
+            onClick={handlePrevClick}
+            disabled={visibleCategoryIndex === 0}
+          >
+            Previous
+          </button>
+          <button
+            onClick={handleNextClick}
+            disabled={visibleCategoryIndex === workCategories.length - 1}
+          >
+            Next
+          </button>
+        </div>
+      )} */}
     </div>
   );
 };
@@ -82,7 +121,7 @@ const Body = () => {
       <div className="brands-row">
         {brands.map((item, index) => (
           <div key={index} className="container-Barnd-row">
-            <img src={item} />
+            <img src={item} alt="" />
           </div>
         ))}
       </div>

@@ -1,14 +1,26 @@
 .menu-container {
-    width: 120px;
-    height: 250px;
-    background-color: aqua;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: #fb0202;
+    z-index: 999;
+    flex-direction: column;
+    padding: 112px;
 }
 
-/* Menu.css */
-
 .menu {
-    background-color: #333;
+    background-color: #fb0202;
     color: #fff;
+    flex-direction: column;
+
+}
+
+.menu-close {
+    position: absolute;
+    right: 20%;
+    top: 0%;
 }
 
 .menu-list {
@@ -16,6 +28,9 @@
     padding: 0;
     margin: 0;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu-item {
@@ -33,4 +48,51 @@
 
 .menu-item a:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .menu-container {
+        position: absolute;
+        top: 0px;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(240, 0, 0, 0.8);
+    }
+
+    .menu {
+        background-color: #333;
+        color: #fff;
+    }
+
+    .menu-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+    }
+
+    .menu-item {
+        margin-right: 20px;
+    }
+
+    .menu-item:last-child {
+        margin-right: 0;
+    }
+
+    .menu-item a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .menu-item a:hover {
+        text-decoration: underline;
+    }
+
+    .menu-close {
+        position: absolute;
+        right: 20%;
+        top: 0%;
+    }
+
 }
