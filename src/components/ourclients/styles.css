@@ -41,7 +41,7 @@
 .our-clients-images {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     width: auto;
 }
 
@@ -57,9 +57,13 @@
 
 @media (max-width: 480px) {
     .our-client-contener-main {
-        margin: 20px;
+        margin: 0px;
         height: auto;
-        margin-left: 40px;
+        margin-left: 0px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+
     }
 
     .our-client-contener-main h1 {
@@ -75,14 +79,14 @@
     }
 
     .our-clients-arow {
-        margin: 0;
-        width: 100%;
-        justify-content: center;
+        margin: 0%;
+        display: flex;
+        justify-content: space-between;
     }
 
     .our-clients-arow img {
-        width: 40px;
-        height: 40px;
+        width: 20px;
+        height: 20px;
     }
 
     .our-clients-images {
@@ -95,8 +99,8 @@
         margin-top: 20px;
     }
 
-    /* 
-    .our-clients-logo:nth-child(n+5) {
-        display: none;
-    } */
+    .our-clients-logo img {
+        width: 100px;
+        align-self: center;
+    }
 }

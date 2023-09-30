@@ -154,7 +154,7 @@
         align-items: center;
         text-align: center;
         margin-top: 26px;
-        margin-right: -150px;
+        margin-right: 0px;
     }
 
     .menu-image {
@@ -164,9 +164,15 @@
         height: auto;
     }
 
+    .right-image-mobile {
+        margin-top: 25px;
+        margin-right: 25px;
+    }
+
+    /* 
     .CustomButton {
         display: none;
-    }
+    } */
 
     /* 
     .menu-close {
