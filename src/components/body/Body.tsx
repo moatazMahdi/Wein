@@ -9,10 +9,14 @@ import { OurWorkData } from "../../Data/inedx";
 import Ourclients from "../ourclients/Ourclients";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
+import RightArow from "../../assets/images/rightArow.svg";
+import LiftArow from "../../assets/images/laftArow.svg";
+
 interface WorkCategory {
   name: string;
   items: string[];
 }
+
 const renderOurWork = () => {
   const [visibleCategoryIndex, setVisibleCategoryIndex] = useState(0);
 
@@ -36,41 +40,45 @@ const renderOurWork = () => {
   };
   const isMobile = window.innerWidth <= 480;
 
+  // Show only the currently visible category
+  const visibleCategory = workCategories[visibleCategoryIndex];
+
   return (
-    <div className="category-container">
-      {workCategories.map((categoryData, index) => (
-        <div
-          key={index}
-          className="category"
-          // style={{
-          //   display:
-          //     index === visibleCategoryIndex || isMobile ? "block" : "none",
-          // }}
-        >
-          <h2>{categoryData.name}</h2>
-          <div className="category-data">
-            {categoryData.items.map((item, itemIndex) => (
-              <p key={itemIndex}>{item}</p>
-            ))}
+    <div>
+      {isMobile ? (
+        <div className="category-container">
+          <div className="category">
+            <h2>{visibleCategory.name}</h2>
+            <div className="category-data">
+              {visibleCategory.items.map((item, itemIndex) => (
+                <p key={itemIndex}>{item}</p>
+              ))}
+            </div>
           </div>
         </div>
-      ))}
-      {/* {isMobile && (
-        <div className="navigation-buttons">
-          <button
-            onClick={handlePrevClick}
-            disabled={visibleCategoryIndex === 0}
-          >
-            Previous
-          </button>
-          <button
-            onClick={handleNextClick}
-            disabled={visibleCategoryIndex === workCategories.length - 1}
-          >
-            Next
-          </button>
+      ) : (
+        <div className="category-container">
+          {workCategories.map((categoryData, index) => (
+            <div key={index} className="category">
+              <h2>{categoryData.name}</h2>
+              <div className="category-data">
+                {categoryData.items.map((item, itemIndex) => (
+                  <p key={itemIndex}>{item}</p>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
-      )} */}
+      )}
+
+      {isMobile && (
+        <div className="prev-next-buttons">
+          <div className="our-work-arow">
+            <img src={LiftArow} alt="LiftArow" onClick={handlePrevClick} />
+            <img src={RightArow} alt="RightArow" onClick={handleNextClick} />
+          </div>
+        </div>
+      )}
     </div>
   );
 };
@@ -113,7 +121,6 @@ const renderWorldSecction = () => {
   );
 };
 const Body = () => {
-  const navigate = useNavigate();
   const brands = [Facebook, Google, Adobe, Hubsopt, Bing];
 
   return (

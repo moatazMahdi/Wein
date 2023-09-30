@@ -2,12 +2,13 @@ import Logo from "../../assets/images/logo.svg";
 import MenuIcon from "../../assets/images/menu.svg";
 import "./Navbar.css";
 import CustomButton from "../custombutton/customButton";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import MenuScreen from "../menu/menu";
 import { Link } from "react-router-dom"; // Import Link from React Router
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 480);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -16,6 +17,20 @@ const Navbar = () => {
     setIsMenuOpen(false);
   };
 
+  useEffect(() => {
+    // Add a resize event listener to detect screen size changes
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 480);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <div className="image-row">
       <div className="left-images">
@@ -23,38 +38,56 @@ const Navbar = () => {
           <img src={Logo} alt="Logo" className="image" />
         </Link>
       </div>
-      <div className="right-image">
-        {/* {isMenuOpen && (
+      {isMobile ? (
+        <div className="right-image-mobile">
+          {isMenuOpen && (
+            <div className="menu-content">
+              <MenuScreen closeMenu={closeMenu} />
+            </div>
+          )}
+          {!isMenuOpen && (
+            <div onClick={toggleMenu}>
+              <img src={MenuIcon} alt="Menu" className="menu-image" />
+            </div>
+          )}
+
+          <div className="CustomButton"></div>
+        </div>
+      ) : (
+        <div className="right-image">
+          {/* {isMenuOpen && (
           <button className="menu-close" onClick={closeMenu}>
             Close
           </button>
         )} */}
-        {isMenuOpen && (
-          <div className="menu-content">
-            <MenuScreen closeMenu={closeMenu} />
+          {isMenuOpen && (
+            <div className="menu-content">
+              <MenuScreen closeMenu={closeMenu} />
+            </div>
+          )}
+          {!isMenuOpen && (
+            <div onClick={toggleMenu}>
+              <img src={MenuIcon} alt="Menu" className="menu-image" />
+            </div>
+          )}
+
+          <div className="CustomButton">
+            <CustomButton
+              text="Contact Us"
+              fontSize="16px"
+              fontWeight="bold"
+              width="157px"
+              height="48px"
+              backgroundColor="transparent"
+              color="#fff"
+              onClick={() => {
+                // Define your click event handler here
+                alert("Contact Us ");
+              }}
+            />
           </div>
-        )}
-        {!isMenuOpen && (
-          <div onClick={toggleMenu}>
-            <img src={MenuIcon} alt="Menu" className="menu-image" />
-          </div>
-        )}
-        <div className="CustomButton">
-          <CustomButton
-            text="Contact Us"
-            fontSize="16px"
-            fontWeight="bold"
-            width="157px"
-            height="48px"
-            backgroundColor="transparent"
-            color="#fff"
-            onClick={() => {
-              // Define your click event handler here
-              alert("Contact Us ");
-            }}
-          />
         </div>
-      </div>
+      )}
     </div>
   );
 };

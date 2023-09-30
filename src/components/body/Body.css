@@ -376,17 +376,16 @@
 
     .category-container {
         width: auto;
-        flex-wrap: nowrap;
-        overflow-x: auto;
         margin-left: 0px;
         margin-top: 0px;
     }
 
     .category {
+        width: auto;
         margin: 10px;
         padding: 10px;
         border-radius: 5px;
-        max-width: 70%;
+        max-width: 100%;
 
     }
 
@@ -556,5 +555,26 @@
         text-align: center;
         /* Center text */
     }
+
+    .prev-next-buttons {
+        width: auto;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 60px;
+    }
+
+    .our-work-arow {
+        margin: 0;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .our-work-arow img {
+        width: 20px;
+        height: 20px;
+    }
+
 
 }

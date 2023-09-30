@@ -7,11 +7,18 @@ interface WorkCategory {
   items: string[];
 }
 
-const footerData = [
+const footerData: WorkCategory[] = [
   {
-    Wein: ["Works", "Team", "Events", "About", "Contact"],
-    Social: ["Behance", "Dribbble", "Instagram", "Facebook", "Twitter"],
-    Legal: ["Privacy", "Terms", "Cookies", "License", "Program"],
+    name: "Wein",
+    items: ["Works", "Team", "Events", "About", "Contact"],
+  },
+  {
+    name: "Social",
+    items: ["Behance", "Dribbble", "Instagram", "Facebook", "Twitter"],
+  },
+  {
+    name: "Legal",
+    items: ["Privacy", "Terms", "Cookies", "License", "Program"],
   },
 ];
 
@@ -28,24 +35,23 @@ function Footer() {
         <div className="footer-category-main">
           <div className="footer-category-container">
             <div className="footer-data-container">
-              {footerData[0] &&
-                Object.keys(footerData[0]).map((category, index) => (
-                  <div key={index} className="footer-category">
-                    <h2>{category}</h2>
-                    <div className="footer-category-data">
-                      {footerData[0][category].map((item, itemIndex) => (
-                        <p key={itemIndex}>
-                          <Link
-                            to={`/${item.toLowerCase()}`}
-                            className="link-no-style"
-                          >
-                            {item}
-                          </Link>
-                        </p>
-                      ))}
-                    </div>
+              {footerData.map((category, index) => (
+                <div key={index} className="footer-category">
+                  <h2>{category.name}</h2>
+                  <div className="footer-category-data">
+                    {category.items.map((item, itemIndex) => (
+                      <p key={itemIndex}>
+                        <Link
+                          to={`/${item.toLowerCase()}`}
+                          className="link-no-style"
+                        >
+                          {item}
+                        </Link>
+                      </p>
+                    ))}
                   </div>
-                ))}
+                </div>
+              ))}
             </div>
           </div>
         </div>
