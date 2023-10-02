@@ -39,3 +39,48 @@
     margin-top: 40px;
     margin-right: 32px;
 }
+
+@media (max-width: 480px) {
+    .innovation-main-container {
+        background: var(--0-f-051-d, #0F051D);
+    }
+
+    .innovation-crads-container {
+        width: 100%;
+        padding: 2px;
+        padding-top: 0px;
+    }
+
+    .innovation-text-styles {
+        color: var(--ffffff, #FFF);
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Helvetica Neue;
+        font-size: 43px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 56px;
+        /* 130.233% */
+        letter-spacing: -0.5px;
+    }
+
+    .innovation-crads-container {
+        width: 100%;
+        padding: 12px;
+        padding-top: 30px;
+        padding-right: 20px;
+    }
+
+    .innovation-card-row {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .innovation-card-container {
+        display: flex;
+        flex-direction: row;
+        margin-top: 40px;
+        margin-right: 32px;
+    }
+
+}

@@ -27,6 +27,11 @@ function MenuScreen({ isOpen, onClose, closeMenu }) {
             Contact Us
           </Link>
         </li>
+        <li className="menu-item">
+          <Link to="/bolg" onClick={onClose}>
+            BLOG
+          </Link>
+        </li>
         {/* Add more menu items as needed */}
         <button className="menu-close" onClick={closeMenu}>
           Close

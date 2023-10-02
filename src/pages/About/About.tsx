@@ -31,7 +31,7 @@ const About = () => {
                 </div>
               ))}
             </div>
-            <div className="right-column" style={{ marginLeft: "20px" }}>
+            <div className="right-column">
               {companyCulture.slice(3).map((text, index) => (
                 <div className="company-culture-service" key={index}>
                   <img src={RightImage} alt={`Image ${index}`} />
