@@ -4,9 +4,13 @@ import "./Navbar.css";
 import CustomButton from "../custombutton/customButton";
 import { useEffect, useState } from "react";
 import MenuScreen from "../menu/menu";
-import { Link } from "react-router-dom"; // Import Link from React Router
+import { Link } from "react-router-dom";
 
-const Navbar = () => {
+type CustomButtonProps = {
+  onClick: () => void;
+};
+
+const Navbar: React.FC<CustomButtonProps> = ({ onClick }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 480);
 
@@ -42,7 +46,11 @@ const Navbar = () => {
         <div className="right-image-mobile">
           {isMenuOpen && (
             <div className="menu-content">
-              <MenuScreen closeMenu={closeMenu} />
+              <MenuScreen
+                closeMenu={closeMenu}
+                onClose={closeMenu}
+                isOpen={true}
+              />
             </div>
           )}
           {!isMenuOpen && (
@@ -62,7 +70,11 @@ const Navbar = () => {
         )} */}
           {isMenuOpen && (
             <div className="menu-content">
-              <MenuScreen closeMenu={closeMenu} />
+              <MenuScreen
+                closeMenu={closeMenu}
+                onClose={closeMenu}
+                isOpen={true}
+              />
             </div>
           )}
           {!isMenuOpen && (
@@ -80,10 +92,7 @@ const Navbar = () => {
               height="48px"
               backgroundColor="transparent"
               color="#fff"
-              onClick={() => {
-                // Define your click event handler here
-                alert("Contact Us ");
-              }}
+              onClick={onClick}
             />
           </div>
         </div>
