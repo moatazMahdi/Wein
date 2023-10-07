@@ -1,7 +1,13 @@
 import "./Menu.css";
 import { Link, useNavigate } from "react-router-dom"; // If using React Router for navigation
 
-function MenuScreen({ isOpen, onClose, closeMenu }) {
+type MenuScreenProps = {
+  isOpen: boolean;
+  onClose: () => void;
+  closeMenu: () => void;
+};
+
+function MenuScreen({ isOpen, onClose, closeMenu }: MenuScreenProps) {
   const menuClassName = isOpen ? "menu open" : "menu-container";
   const navigate = useNavigate();
   return (
