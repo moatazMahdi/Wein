@@ -10,6 +10,7 @@ import Contect from "../../components/contacts/Contect";
 import Footer from "../../components/footer/Footer";
 import OurTeam from "../../components/ourteam/OurTeam";
 import PagesHeader from "../../components/pagesHeader/PagesHeader";
+// import { Link, Events, scrollSpy } from "react-scroll";
 
 const About = () => {
   const rendercompanyCulture = () => {
@@ -104,11 +105,13 @@ const About = () => {
 
   return (
     <div className="about-main-container">
-      <PagesHeader
-        title="ABOUT"
-        Descrpion="We help businesses and brands succeed in the digital age."
-        sub_Descrpion=""
-      />
+      <div className="PagesHeader">
+        <PagesHeader
+          title="ABOUT"
+          Descrpion="We help businesses and brands succeed in the digital age."
+          sub_Descrpion=""
+        />
+      </div>
       <div className="about-body-container">
         <OurTeam />
         {/* {renderMeetTeemSection()} */}

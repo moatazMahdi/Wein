@@ -10,8 +10,7 @@ const Ourclients = () => {
   const [itemsPerPage, setItemsPerPage] = useState(
     window.innerWidth <= 480 ? 4 : 8
   );
-  // const itemsPerPage = window.innerWidth <= 480 ? 4 : 8;
-  console.log("itemsPerPage", itemsPerPage);
+
   useEffect(() => {
     const end = Math.min(startIndex + itemsPerPage, OurClients.length);
     setVisibleClients(OurClients.slice(startIndex, end));
@@ -44,7 +43,11 @@ const Ourclients = () => {
         {visibleClients.map((image, index) => {
           return (
             <div className="our-clients-logo" key={index}>
-              <img src={image} alt={`Client Logo ${index + startIndex + 1}`} />
+              <img
+                src={image}
+                alt={`Client Logo ${index + startIndex + 1}`}
+                loading="lazy"
+              />
             </div>
           );
         })}

@@ -8,13 +8,19 @@ import Colum from "../../assets/images/colum.svg";
 import { OurWorkData } from "../../Data/inedx";
 import Ourclients from "../ourclients/Ourclients";
 import { useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import RightArow from "../../assets/images/rightArow.svg";
 import LiftArow from "../../assets/images/laftArow.svg";
+import VisibilitySensor from "react-visibility-sensor";
+import CountUp from "react-countup";
 
 interface WorkCategory {
   name: string;
   items: string[];
+}
+interface AnimatedSectionProps {
+  number: string;
+  text: string;
 }
 
 const renderOurWork = () => {
@@ -26,7 +32,43 @@ const renderOurWork = () => {
       items: OurWorkData[0][category as keyof (typeof OurWorkData)[0]],
     })
   );
+  const intersectionRefs = Array(workCategories.length)
+    .fill(0)
+    .map(() => useRef(null));
 
+  useEffect(() => {
+    const observerOptions = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.5,
+    };
+
+    const callback = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const index = parseInt(entry.target.getAttribute("data-index"));
+          setVisibleCategoryIndex(index);
+        }
+      });
+    };
+
+    // Create and attach IntersectionObserver instances for each category
+    intersectionRefs.forEach((ref) => {
+      const observer = new IntersectionObserver(callback, observerOptions);
+      if (ref.current) {
+        observer.observe(ref.current);
+      }
+    });
+
+    // Clean up the observers when unmounting
+    return () => {
+      intersectionRefs.forEach((ref) => {
+        if (ref.current) {
+          ref.current = null;
+        }
+      });
+    };
+  }, []);
   const handleNextClick = () => {
     if (visibleCategoryIndex < workCategories.length - 1) {
       setVisibleCategoryIndex(visibleCategoryIndex + 1);
@@ -42,9 +84,12 @@ const renderOurWork = () => {
 
   // Show only the currently visible category
   const visibleCategory = workCategories[visibleCategoryIndex];
+  const progressWidth = `${
+    (visibleCategoryIndex / (workCategories.length - 1)) * 100
+  }%`;
 
   return (
-    <div>
+    <div className="main-renderOurWork">
       {isMobile ? (
         <div className="category-container">
           <div className="category">
@@ -59,18 +104,44 @@ const renderOurWork = () => {
       ) : (
         <div className="category-container">
           {workCategories.map((categoryData, index) => (
-            <div key={index} className="category">
-              <h2>{categoryData.name}</h2>
+            <div
+              key={index}
+              className={`category ${
+                index === visibleCategoryIndex ? "active fade-in" : "non-active"
+              }`}
+              data-index={index}
+              ref={intersectionRefs[index]}
+            >
+              <h2
+                className={`category-h2 ${
+                  index === visibleCategoryIndex
+                    ? "active fade-in"
+                    : "non-active"
+                }`}
+              >
+                {categoryData.name}
+              </h2>
               <div className="category-data">
                 {categoryData.items.map((item, itemIndex) => (
-                  <p key={itemIndex}>{item}</p>
+                  <p
+                    key={itemIndex}
+                    className={`category-data-p ${
+                      index === visibleCategoryIndex
+                        ? "active fade-in"
+                        : "non-active"
+                    }`}
+                  >
+                    {item}
+                  </p>
                 ))}
               </div>
             </div>
           ))}
         </div>
       )}
-
+      <div className="progress-bar">
+        <div className="progress" style={{ width: progressWidth }}></div>
+      </div>
       {isMobile && (
         <div className="prev-next-buttons">
           <div className="our-work-arow">
@@ -83,43 +154,53 @@ const renderOurWork = () => {
   );
 };
 
+const AnimatedSection: React.FC<AnimatedSectionProps> = ({ number, text }) => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  const handleVisibilityChange = (isVisible: boolean) => {
+    setIsVisible(isVisible);
+  };
+
+  return (
+    <VisibilitySensor
+      partialVisibility={true}
+      onChange={handleVisibilityChange}
+    >
+      <div className={`section ${isVisible ? "fade-in active" : "fade-in"}`}>
+        <div className="column">
+          <CountUp
+            className="section-column-number"
+            start={0}
+            end={isVisible ? parseInt(number) : 0}
+            duration={4}
+          />
+          {/* <p className="section-column-number">{number}</p> */}
+        </div>
+        <div className="column">
+          <p className="section-column-text">{text}</p>
+        </div>
+      </div>
+    </VisibilitySensor>
+  );
+};
+
 const renderWorldSecction = () => {
   return (
     <div className="world-sction-container">
       <div className="world-sction-main">
         <h1>Growing all around the globe.</h1>
         <div className="world-sction-number">
-          <div className="section">
-            <div className="column">
-              <p className="section-column-number">54</p>
-            </div>
-            <div className="column">
-              <p className="section-column-text">Countries</p>
-            </div>
-          </div>
+          <AnimatedSection number="54" text="Countries" />
           <img src={Colum} alt="Your Image" className="image-between" />
-          <div className="section">
-            <div className="column">
-              <p className="section-column-number">136</p>
-            </div>
-            <div className="column">
-              <p className="section-column-text">Clients</p>
-            </div>
-          </div>
+          <AnimatedSection number="136" text="Clients" />
           <img src={Colum} alt="Your Image" className="image-between" />
-          <div className="section">
-            <div className="column">
-              <p className="section-column-number">12</p>
-            </div>
-            <div className="column">
-              <p className="section-column-text">Offices</p>
-            </div>
-          </div>
+          <AnimatedSection number="12" text="Offices" />
         </div>
       </div>
     </div>
   );
 };
+
 const Body = () => {
   const brands = [Facebook, Google, Adobe, Hubsopt, Bing];
 
