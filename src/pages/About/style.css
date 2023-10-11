@@ -3,12 +3,15 @@
     height: auto;
 }
 
+.PagesHeader {}
+
 .about-container {
     background: rgba(9, 6, 43, 0.90);
     width: auto;
     height: 100vh;
     opacity: 0.7;
 }
+
 
 .about-text-container {
     max-width: 85%;
@@ -20,6 +23,24 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+.about-text-row img {
+    margin-right: 20px;
+    margin-top: -15px
+}
+
+.about-text-row p {
+    color: var(--ffffff, #FFF);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Helvetica Neue;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -0.2px;
+
+
 }
 
 .about-text-demo {
