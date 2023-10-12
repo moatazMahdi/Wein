@@ -13,6 +13,7 @@ import RightArow from "../../assets/images/rightArow.svg";
 import LiftArow from "../../assets/images/laftArow.svg";
 import VisibilitySensor from "react-visibility-sensor";
 import CountUp from "react-countup";
+import { Helmet } from "react-helmet";
 
 interface WorkCategory {
   name: string;
@@ -206,41 +207,57 @@ const Body = () => {
 
   return (
     <div className="main-contener">
-      <div className="brands-row">
-        {brands.map((item, index) => (
-          <div key={index} className="container-Barnd-row">
-            <img src={item} alt="" />
-          </div>
-        ))}
-      </div>
+      <Helmet>
+        <meta
+          name="description"
+          content="A brief description of your home page."
+        />
+        <meta name="keywords" content="relevant, keywords, here" />
+      </Helmet>
+      <section id="brands">
+        <div className="brands-row">
+          {brands.map((item, index) => (
+            <div key={index} className="container-Barnd-row">
+              <img src={item} alt="" />
+            </div>
+          ))}
+        </div>
+      </section>
 
-      <div className="text-row">
-        <p className="text-one">
-          Your partner on the journey from now to what’s next
-        </p>
-        <p className="text-two">
-          Rapid change creates uncertainty. But at Method, we believe it
-          presents opportunity. From transforming existing experiences to
-          innovating something completely new, our team collaborates to move
-          your business forward today while building the capabilities needed to
-          sustain your success in the future.
-        </p>
-      </div>
+      <section id="text-row-1">
+        <div className="text-row">
+          <p className="text-one">
+            Your partner on the journey from now to what’s next
+          </p>
+          <p className="text-two">
+            Rapid change creates uncertainty. But at Method, we believe it
+            presents opportunity. From transforming existing experiences to
+            innovating something completely new, our team collaborates to move
+            your business forward today while building the capabilities needed
+            to sustain your success in the future.
+          </p>
+        </div>
+      </section>
+
       {/* {renderimage()} */}
-      {renderWorldSecction()}
-      <div className="text-row">
-        <p className="text-row-one">
-          Strategy. Brand positioning. Design. Integration. Launch. No silver
-          bullet. Just a passionate pursuit of excellence.
-        </p>
-        <p className="text-row-two">
-          Your brand's story fuels our inspiration. Together, we bring it to
-          life. Our A-team can tackle any task. If your needs aren't listed,
-          just ask
-        </p>
-      </div>
-      {renderOurWork()}
-      <Ourclients />
+      <section id="world-section">{renderWorldSecction()}</section>
+      <section id="text-row-2">
+        <div className="text-row">
+          <p className="text-row-one">
+            Strategy. Brand positioning. Design. Integration. Launch. No silver
+            bullet. Just a passionate pursuit of excellence.
+          </p>
+          <p className="text-row-two">
+            Your brand's story fuels our inspiration. Together, we bring it to
+            life. Our A-team can tackle any task. If your needs aren't listed,
+            just ask
+          </p>
+        </div>
+      </section>
+      <section id="our-work">{renderOurWork()}</section>
+      <section id="our-clients">
+        <Ourclients />
+      </section>
     </div>
   );
 };
