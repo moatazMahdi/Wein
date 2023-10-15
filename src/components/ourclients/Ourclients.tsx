@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 
 const Ourclients = () => {
   const [startIndex, setStartIndex] = useState(0);
-  const [visibleClients, setVisibleClients] = useState([]);
+  const [visibleClients, setVisibleClients] = useState<string[]>([]);
   const [itemsPerPage] = useState(window.innerWidth <= 480 ? 4 : 8);
 
   useEffect(() => {

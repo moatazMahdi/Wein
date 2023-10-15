@@ -1,29 +1,29 @@
+import { useState } from "react";
 import PagesHeader from "../../components/pagesHeader/PagesHeader";
-import "./styles.css";
 import RightArow from "../../assets/images/rightArow.svg";
 import LiftArow from "../../assets/images/laftArow.svg";
 import { OurWorkdata } from "../../Data/inedx";
-import { useEffect, useState } from "react";
 import HoverCard from "../../components/hoverCard/HoverCard";
 import Contect from "../../components/contacts/Contect";
 import Footer from "../../components/footer/Footer";
+import "./styles.css";
 
 const renderOurWorkdata = () => {
-  const [selectedCategory, setSelectedCategory] = useState(
+  const [selectedCategory, setSelectedCategory] = useState<string>(
     OurWorkdata[0].category
   );
-  const handleCategoryClick = (category) => {
+
+  const handleCategoryClick = (category: string) => {
     setSelectedCategory(category);
   };
 
-  useEffect(() => {
-    // This useEffect will run when the component mounts
-    // Set the initial selected category to the first category in OurWork
-    setSelectedCategory(OurWorkdata[0].category);
-  }, []); // The empty dependency array ensures it runs only once on mount
-  const projects = OurWorkdata.find(
+  const selectedCategoryData = OurWorkdata.find(
     (item) => item.category === selectedCategory
-  ).projects;
+  );
+
+  // Check if selectedCategoryData is defined before accessing its properties
+  const projects = selectedCategoryData?.projects || [];
+
   return (
     <div>
       <div className="our-work-category-row">
@@ -40,6 +40,7 @@ const renderOurWorkdata = () => {
             {item.category}
           </div>
         ))}
+        ;
       </div>
       <div className="our-work-category-project-data">
         {projects.map((project) => (
@@ -77,7 +78,7 @@ const OurWork = () => {
       <PagesHeader
         title="OUR WORK"
         Descrpion="Supporting you on the path to digital transformation"
-        sub_Descrpion="Do you have an idea but are struggling to execute it because of the complexities involved? Don't worry. We are here to solve your problem. We help entrepreneurs convert their ideas into products and services. Do you have an idea but are struggling to execute it because of the complexities involved? Don't worry. We are here to solve your problem. We help entrepreneurs convert their ideas into products and services. "
+        sub_Descrpion="Do you have an idea but are struggling to execute it because of the complexities involved? Don't worry. We are here to solve your problem. We help entrepreneurs convert their ideas into products and services. Do you have an idea but are struggling to execute it because of the complexities involved? Don't worry. We are here to solve your problem. We help entrepreneurs convert their ideas into products and services."
       />
       {renderOurWork()}
       <Contect />

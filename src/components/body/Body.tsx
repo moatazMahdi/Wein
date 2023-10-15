@@ -43,13 +43,18 @@ const renderOurWork = () => {
       threshold: 0.5,
     };
 
-    const callback = (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          const index = parseInt(entry.target.getAttribute("data-index"));
-          setVisibleCategoryIndex(index);
+    const callback = (entries: any[]) => {
+      entries.forEach(
+        (entry: {
+          isIntersecting: any;
+          target: { getAttribute: (arg0: string) => string };
+        }) => {
+          if (entry.isIntersecting) {
+            const index = parseInt(entry.target.getAttribute("data-index"));
+            setVisibleCategoryIndex(index);
+          }
         }
-      });
+      );
     };
 
     // Create and attach IntersectionObserver instances for each category
