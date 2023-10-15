@@ -1,4 +1,4 @@
-import "./Contects.css";
+import "./contects.css";
 import { useEffect, useState } from "react";
 import CustomButton from "../custombutton/customButton";
 function Contect() {
