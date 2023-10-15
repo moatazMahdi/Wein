@@ -1,4 +1,3 @@
-import React from "react";
 import "./Text.css";
 import { ourTeemData } from "./Data/inedx";
 

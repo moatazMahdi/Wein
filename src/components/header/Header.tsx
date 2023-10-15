@@ -1,9 +1,7 @@
 import "./Header.css";
 import CustomButton from "../custombutton/customButton";
-import Navbar from "../navbar/Navbar";
 import Rowline from "../../assets/images/row.svg";
 import Discover from "../../assets/images/discover.svg";
-import { useState, useEffect } from "react";
 
 type CustomButtonProps = {
   onClickLetsgo: () => void;
@@ -40,7 +38,6 @@ const Header: React.FC<CustomButtonProps> = ({ onClickLetsgo }) => {
               onClick={onClickLetsgo}
               hoverBackgroundColor="#fff"
               hoverColor="#000"
-              hoverStyle={{ boxShadow: "0px 0px 5px #888888" }}
             />
           </div>
           <div className="Discover-contener">

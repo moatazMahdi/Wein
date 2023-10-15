@@ -10,7 +10,6 @@ import Contect from "../../components/contacts/Contect";
 import Footer from "../../components/footer/Footer";
 import OurTeam from "../../components/ourteam/OurTeam";
 import PagesHeader from "../../components/pagesHeader/PagesHeader";
-import { useEffect, useRef } from "react";
 
 const About = () => {
   const rendercompanyCulture = () => {
@@ -96,6 +95,8 @@ const About = () => {
               onClick={() => {
                 alert("Senddddddddddd ");
               }}
+              hoverBackgroundColor={""}
+              hoverColor={""}
             />
           </div>
         </div>

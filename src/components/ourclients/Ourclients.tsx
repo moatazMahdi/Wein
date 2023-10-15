@@ -7,9 +7,7 @@ import { useEffect, useState } from "react";
 const Ourclients = () => {
   const [startIndex, setStartIndex] = useState(0);
   const [visibleClients, setVisibleClients] = useState([]);
-  const [itemsPerPage, setItemsPerPage] = useState(
-    window.innerWidth <= 480 ? 4 : 8
-  );
+  const [itemsPerPage] = useState(window.innerWidth <= 480 ? 4 : 8);
 
   useEffect(() => {
     const end = Math.min(startIndex + itemsPerPage, OurClients.length);

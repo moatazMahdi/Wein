@@ -109,6 +109,8 @@ function Contect() {
               onClick={() => {
                 alert("Senddddddddddd ");
               }}
+              hoverBackgroundColor={""}
+              hoverColor={""}
             />
           ) : (
             <CustomButton
@@ -122,6 +124,8 @@ function Contect() {
               onClick={() => {
                 alert("Senddddddddddd ");
               }}
+              hoverBackgroundColor={""}
+              hoverColor={""}
             />
           )}
         </form>

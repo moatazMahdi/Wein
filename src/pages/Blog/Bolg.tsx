@@ -104,6 +104,8 @@ const renderTags = () => {
               // Define your click event handler here
               alert("Senddddddddddd ");
             }}
+            hoverBackgroundColor={""}
+            hoverColor={""}
           />
         </div>
       </div>
@@ -183,6 +185,8 @@ const renderTags = () => {
           onClick={() => {
             alert("Senddddddddddd ");
           }}
+          hoverBackgroundColor={""}
+          hoverColor={""}
         />
       </div>
     </div>
@@ -192,7 +196,11 @@ const renderTags = () => {
 const Bolg = () => {
   return (
     <div className="blogs-container">
-      <Navbar />
+      <Navbar
+        onClick={function (): void {
+          throw new Error("Function not implemented.");
+        }}
+      />
       <div className="blog-main-secsion">
         <div className="blog-text-container">
           <div className="blog-text-row">

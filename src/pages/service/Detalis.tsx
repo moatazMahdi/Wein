@@ -1,11 +1,4 @@
-import { useEffect, useState } from "react";
 import { useParams, useLocation } from "react-router-dom";
-
-interface CardData {
-  title?: string; // Make sure to handle potential missing properties
-  description?: string; // Make sure to handle potential missing properties
-  // Add more properties as needed
-}
 
 const Detalis = ({}) => {
   const { cardId } = useParams();

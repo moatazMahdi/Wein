@@ -4,7 +4,6 @@ import Body from "../../components/body/Body";
 import Contect from "../../components/contacts/Contect";
 import Footer from "../../components/footer/Footer";
 import { useEffect, useRef, useState } from "react";
-import { Helmet } from "react-helmet";
 import Navbar from "../../components/navbar/Navbar";
 
 const Home = () => {

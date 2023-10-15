@@ -11,7 +11,6 @@ interface CustomButtonProps {
   onClick: () => void;
   hoverBackgroundColor: string;
   hoverColor: string;
-  hoverStyle: CSSProperties; // New prop for hover styles
 }
 
 const CustomButton = ({
@@ -26,7 +25,7 @@ const CustomButton = ({
 }: CustomButtonProps) => {
   const [isHovered, setIsHovered] = useState(false);
 
-  const buttonStyle = {
+  const buttonStyle: CSSProperties = {
     backgroundColor: isHovered ? "#ffffff" : backgroundColor,
     color: isHovered ? "#000000" : color,
     padding: "10px 20px",

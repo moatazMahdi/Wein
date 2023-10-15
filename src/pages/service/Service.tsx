@@ -3,7 +3,7 @@ import "./styles.css";
 import { ourService } from "../../Data/inedx";
 import Contect from "../../components/contacts/Contect";
 import Footer from "../../components/footer/Footer";
-import { useNavigate, Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const renderServiceData = () => {
   const navigate = useNavigate();

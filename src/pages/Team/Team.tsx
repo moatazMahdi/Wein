@@ -3,7 +3,7 @@ import "./styles.css";
 import Rowline from "../../assets/images/about/rowlinewithoutcolor.svg";
 import RightArow from "../../assets/images/rightArow.svg";
 import LiftArow from "../../assets/images/laftArow.svg";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { OurTeamdata } from "../../Data/inedx";
 import Contect from "../../components/contacts/Contect";
 import Footer from "../../components/footer/Footer";

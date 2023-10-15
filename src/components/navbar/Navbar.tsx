@@ -74,6 +74,8 @@ const Navbar: React.FC<CustomButtonProps> = ({ onClick }) => {
               backgroundColor="transparent"
               color="#fff"
               onClick={onClick}
+              hoverBackgroundColor={""}
+              hoverColor={""}
             />
           </div>
         </div>

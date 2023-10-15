@@ -7,7 +7,6 @@ import Hubsopt from "../../assets/images/hubsopt.svg";
 import Colum from "../../assets/images/colum.svg";
 import { OurWorkData } from "../../Data/inedx";
 import Ourclients from "../ourclients/Ourclients";
-import { useNavigate } from "react-router-dom";
 import { useState, useEffect, useRef } from "react";
 import RightArow from "../../assets/images/rightArow.svg";
 import LiftArow from "../../assets/images/laftArow.svg";
