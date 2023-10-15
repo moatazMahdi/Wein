@@ -11,18 +11,8 @@ import Footer from "../../components/footer/Footer";
 import OurTeam from "../../components/ourteam/OurTeam";
 import PagesHeader from "../../components/pagesHeader/PagesHeader";
 import { useEffect, useRef } from "react";
-import { useHistory } from "react-router-dom";
-// import { Link, Events, scrollSpy } from "react-scroll";
 
 const About = () => {
-  const history = useHistory();
-
-  useEffect(() => {
-    const scrollToTop = () => {
-      window.scrollTo(0, 0);
-    };
-  }, []);
-
   const rendercompanyCulture = () => {
     return (
       <div className="company-culture-container-main">
@@ -114,7 +104,7 @@ const About = () => {
   };
 
   return (
-    <div className="about-main-container" ref={contentRef}>
+    <div className="about-main-container">
       <div className="PagesHeader">
         <PagesHeader
           title="ABOUT"
@@ -122,7 +112,7 @@ const About = () => {
           sub_Descrpion="We help businesses and brands succeed in the digital age.We help businesses and brands succeed in the digital age.We help businesses and brands succeed in the digital age.We help businesses and brands succeed in the digital age.We help businesses and brands succeed in the digital age.We help businesses and brands succeed in the digital age."
         />
       </div>
-      <div className="about-body-container" ref={contentRef}>
+      <div className="about-body-container">
         <OurTeam />
         {/* {renderMeetTeemSection()} */}
         {rendercompanyCulture()}
