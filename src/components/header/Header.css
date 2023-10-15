@@ -5,6 +5,10 @@
     width: auto;
 }
 
+.new-navBar.hidden {
+    display: none;
+}
+
 .home-contener {
     background-image: url("../../assets/images/LooperBG.svg");
     flex-direction: column;

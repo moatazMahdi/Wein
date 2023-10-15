@@ -3,18 +3,15 @@ import CustomButton from "../custombutton/customButton";
 import Navbar from "../navbar/Navbar";
 import Rowline from "../../assets/images/row.svg";
 import Discover from "../../assets/images/discover.svg";
+import { useState, useEffect } from "react";
 
 type CustomButtonProps = {
-  onClick: () => void;
   onClickLetsgo: () => void;
 };
 
-const Header: React.FC<CustomButtonProps> = ({ onClick, onClickLetsgo }) => {
+const Header: React.FC<CustomButtonProps> = ({ onClickLetsgo }) => {
   return (
     <div className="home-contener-main">
-      <div className="home-contener-Navbar">
-        <Navbar onClick={onClick} />
-      </div>
       <div className="home-contener">
         <div className="home-contan">
           <p className="text-center">Creating digital products and</p>

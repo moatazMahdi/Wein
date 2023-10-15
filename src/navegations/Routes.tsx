@@ -11,10 +11,12 @@ import Strategy from "../pages/Strategy/Strategy";
 import Team from "../pages/Team/Team";
 import Service from "../pages/service/Service";
 import Detalis from "../pages/service/Detalis";
+import ScrollToTop from "../utils/ScrollToTop";
 
 const RoutesNavegation = () => {
   return (
     <BrowserRouter basename="/">
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

@@ -10,18 +10,28 @@ import Contect from "../../components/contacts/Contect";
 import Footer from "../../components/footer/Footer";
 import OurTeam from "../../components/ourteam/OurTeam";
 import PagesHeader from "../../components/pagesHeader/PagesHeader";
+import { useEffect, useRef } from "react";
+import { useHistory } from "react-router-dom";
 // import { Link, Events, scrollSpy } from "react-scroll";
 
 const About = () => {
+  const history = useHistory();
+
+  useEffect(() => {
+    const scrollToTop = () => {
+      window.scrollTo(0, 0);
+    };
+  }, []);
+
   const rendercompanyCulture = () => {
     return (
       <div className="company-culture-container-main">
         <div className="company-culture-right-sction">
           <h2>Our work culture company’s</h2>
           <p>
-            Like Steve Jobs quotes, “Design is not just what <br />
-            it looks like and feels like. Design is how it works”. We always try
-            to make a great output by this culture:
+            Like Steve Jobs quotes, “Design is not just what it looks like and
+            feels like. Design is how it works”. We always try to make a great
+            output by this culture:
           </p>
           <div className="company-culture-container">
             <div className="left-column">
@@ -104,15 +114,15 @@ const About = () => {
   };
 
   return (
-    <div className="about-main-container">
+    <div className="about-main-container" ref={contentRef}>
       <div className="PagesHeader">
         <PagesHeader
           title="ABOUT"
           Descrpion="We help businesses and brands succeed in the digital age."
-          sub_Descrpion=""
+          sub_Descrpion="We help businesses and brands succeed in the digital age.We help businesses and brands succeed in the digital age.We help businesses and brands succeed in the digital age.We help businesses and brands succeed in the digital age.We help businesses and brands succeed in the digital age.We help businesses and brands succeed in the digital age."
         />
       </div>
-      <div className="about-body-container">
+      <div className="about-body-container" ref={contentRef}>
         <OurTeam />
         {/* {renderMeetTeemSection()} */}
         {rendercompanyCulture()}

@@ -124,16 +124,17 @@
         height: auto;
         flex-shrink: 0;
         margin-left: 20px;
-        margin-top: 62PX;
-        margin-bottom: 22PX;
+        margin-top: 30PX;
+        margin-bottom: 0PX;
+
     }
 
     .contects-container-section-right h1 {
-        max-width: 306px;
+        max-width: 100%;
         color: #FFF;
         font-feature-settings: 'clig' off, 'liga' off;
         font-family: Helvetica Neue;
-        font-size: 48px;
+        font-size: 42px;
         font-style: normal;
         font-weight: 700;
         line-height: 61px;
@@ -142,16 +143,16 @@
     }
 
     .contects-container-section-right h3 {
-        max-width: 293px;
+        max-width: 95%;
         color: #FFF;
         font-feature-settings: 'clig' off, 'liga' off;
         font-family: Helvetica Neue;
-        font-size: 20px;
+        font-size: 18px;
         font-style: normal;
         font-weight: 400;
         line-height: 34px;
         letter-spacing: -0.05px;
-        margin-top: 24px;
+        margin-top: 18px;
     }
 
     .contects-container-section-right-CONTACT {

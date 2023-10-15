@@ -3,8 +3,9 @@ import "./Home.css";
 import Body from "../../components/body/Body";
 import Contect from "../../components/contacts/Contect";
 import Footer from "../../components/footer/Footer";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Helmet } from "react-helmet";
+import Navbar from "../../components/navbar/Navbar";
 
 const Home = () => {
   const contactUsSectionRef = useRef<HTMLElement | null>(null);
@@ -21,6 +22,28 @@ const Home = () => {
       letsGoSectionRef.current.scrollIntoView({ behavior: "smooth" });
     }
   };
+
+  const [isShowen, setIsShowen] = useState(true);
+
+  useEffect(() => {
+    let prevScrollPos = window.pageYOffset;
+
+    const handleScroll = () => {
+      const currentScrollPos = window.pageYOffset;
+      if (prevScrollPos > currentScrollPos) {
+        setIsShowen(true);
+      } else {
+        setIsShowen(false);
+      }
+      prevScrollPos = currentScrollPos;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <div className="home-contener-main">
@@ -61,17 +84,23 @@ const Home = () => {
           name="google-site-verification"
           content="your-google-site-verification-code"
         />
-        <link
+        {/* <link
           rel="preload"
           as="font"
           href="/your-font.woff"
           type="font/woff"
           crossOrigin="true"
-        />
+        /> */}
       </Helmet>
-
+      <div
+        className={`home-contener-Navbar ${
+          isShowen ? "background-light" : "hidden"
+        }`}
+      >
+        <Navbar onClick={scrollToContactUs} />
+      </div>
       <header>
-        <Header onClick={scrollToContactUs} onClickLetsgo={scrollToLetsGo} />
+        <Header onClickLetsgo={scrollToLetsGo} />
       </header>
       <body>
         <section ref={letsGoSectionRef} id="letsGoSection">

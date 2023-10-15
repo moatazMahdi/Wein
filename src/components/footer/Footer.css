@@ -102,11 +102,11 @@
 
     .footer-texts-container {
         margin-left: 15px;
-        margin-top: 91px;
+        margin-top: 40px;
     }
 
     .footer-texts-container p {
-        max-width: 85%;
+        max-width: 100%;
         height: auto;
         max-height: 41px;
         flex-shrink: 0;
@@ -118,22 +118,25 @@
         font-weight: 400;
         line-height: normal;
         letter-spacing: -0.2px;
+        margin-right: 20px;
     }
 
     .footer-category-main {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
+        justify-content: space-between;
+        align-items: unset;
         flex: 1;
-        max-width: 40%;
-        margin-top: 90px;
+        max-width: 100%;
+        margin-top: 40px;
+        width: 100%;
+        padding-right: 40px;
     }
 
     .footer-category {
         margin-bottom: 20px;
         margin-left: 15px;
-        margin-bottom: 70px;
+        margin-bottom: 30px;
     }
 
     .footer-category h2 {
@@ -159,12 +162,14 @@
     }
 
     .footer-image img {
-        max-width: 220px;
+        max-width: 320px;
     }
 
     .footer-data-container {
         display: flex;
         margin-left: 10px;
+        justify-content: space-between;
+        width: 100%;
     }
 
     .link-no-style {

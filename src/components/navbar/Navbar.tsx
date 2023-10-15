@@ -63,27 +63,8 @@ const Navbar: React.FC<CustomButtonProps> = ({ onClick }) => {
         </div>
       ) : (
         <div className="right-image">
-          {/* {isMenuOpen && (
-          <button className="menu-close" onClick={closeMenu}>
-            Close
-          </button>
-        )} */}
-          {isMenuOpen && (
-            <div className="menu-content">
-              <MenuScreen
-                closeMenu={closeMenu}
-                onClose={closeMenu}
-                isOpen={true}
-              />
-            </div>
-          )}
-          {!isMenuOpen && (
-            <div onClick={toggleMenu}>
-              <img src={MenuIcon} alt="Menu" className="menu-image" />
-            </div>
-          )}
-
-          <div className="CustomButton">
+          <MenuScreen closeMenu={closeMenu} onClose={closeMenu} isOpen={true} />
+          <div className="CustomButton-sty">
             <CustomButton
               text="Contact Us"
               fontSize="16px"
