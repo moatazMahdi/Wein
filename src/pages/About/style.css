@@ -5,6 +5,10 @@
 
 .PagesHeader {}
 
+.new-name {
+    width: auto;
+}
+
 .about-container {
     background: rgba(9, 6, 43, 0.90);
     width: auto;
