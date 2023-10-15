@@ -50,6 +50,7 @@
     align-items: self-start;
     gap: 60px;
     margin-top: 62px;
+    width: 100%;
 }
 
 .team-member {
@@ -68,7 +69,9 @@
     max-width: 270px;
     align-self: flex-start;
     height: 280px;
-    margin-left: -40px;
+    margin-left: 0px;
+    border-radius: 12px 12px 12px 12px;
+
 }
 
 .team-member-name {
@@ -80,7 +83,8 @@
     line-height: 40px;
     /* 125% */
     letter-spacing: 0.2px;
-    margin-top: -20px;
+    margin-top: 20px;
+
 }
 
 .team-member-jobs {
@@ -158,6 +162,7 @@
         flex-basis: calc(25% - 8px);
         max-width: 100%;
         max-height: 380px;
+
     }
 
     .team-member:nth-child(2n) {
@@ -165,28 +170,29 @@
     }
 
     .team-member img {
-        max-width: 170px;
+        max-width: 150px;
         align-self: flex-start;
-        height: 180px;
+        height: 160px;
+
     }
 
     .team-member-name {
         color: var(--ffffff, #FFF);
         font-family: Helvetica Neue;
-        font-size: 22px;
+        font-size: 18px;
         font-style: normal;
         font-weight: 700;
         line-height: 20px;
         /* 125% */
         letter-spacing: 0.2px;
-        margin-top: -0px;
-        max-width: 80%;
+        margin-top: 15px;
+        max-width: 90%;
     }
 
     .team-member-jobs {
         color: var(--f-1-deff, #DBD1F1);
         font-family: Helvetica Neue;
-        font-size: 16px;
+        font-size: 12px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;

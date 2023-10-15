@@ -176,6 +176,7 @@
     width: 100%;
     height: 1px;
     z-index: 9999;
+    margin-bottom: 20px;
 }
 
 .progress {
@@ -387,12 +388,13 @@
         margin-top: 60px;
         margin-left: 40px;
         margin-right: 40px;
+        margin-bottom: 0px;
     }
 
     .text-one {
         color: #FFF;
         font-family: Helvetica Neue;
-        font-size: 25px;
+        font-size: 18px;
         font-style: normal;
         font-weight: 300;
         line-height: normal;
@@ -402,10 +404,12 @@
     }
 
     .text-two {
-        font-size: 30px;
+        font-size: 25px;
         font-style: normal;
+        font-family: Helvetica Neue;
+        letter-spacing: .5px;
+        line-height: 30px;
         font-weight: 500;
-        line-height: 31px;
         background: radial-gradient(111.96% 125.82% at 1.08% 97.23%, #EB421D 0%, #3F1BDD 100%);
         background-clip: text;
         -webkit-background-clip: text;
@@ -414,7 +418,7 @@
         height: 0%;
         flex-shrink: 0;
         margin-left: 0px;
-        margin-top: 24px;
+        margin-top: 0px;
 
     }
 
@@ -424,7 +428,7 @@
         flex-shrink: 0;
         color: #FFF;
         font-family: Helvetica Neue;
-        font-size: 25px;
+        font-size: 18px;
         font-style: normal;
         font-weight: 300;
         line-height: normal;
@@ -432,7 +436,7 @@
     }
 
     .text-row-two {
-        font-size: 30px;
+        font-size: 25px;
         font-style: normal;
         font-weight: 500;
         line-height: 31px;
@@ -488,7 +492,7 @@
         width: auto;
         height: auto;
         flex-shrink: 0;
-        font-size: 22px;
+        font-size: 35px;
         font-style: normal;
         font-weight: 600;
         line-height: 32px;
@@ -634,9 +638,10 @@
 
     .image-between {
         max-width: auto;
-        height: 125px;
+        height: 80px;
         /* Allow image height to adjust */
         margin: 0;
+        margin-top: -20px;
     }
 
     .section-column-number {

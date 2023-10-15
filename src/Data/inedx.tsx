@@ -75,12 +75,12 @@ export const ourTeemData = [
   {
     name: "Marvin McKinney",
     jobs: ["Co-creator"],
-    image: "../../public/assets/images/about/teemone.png",
+    image: "../../public/assets/images/team/Image.png",
   },
   {
     name: "Floyd Miles",
     jobs: ["Co-creator"],
-    image: "../../public/assets/images/about/teemtwo.png",
+    image: "../../public/assets/images/team/Image.png",
   },
   {
     name: "Kathryn Murphy",

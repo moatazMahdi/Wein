@@ -23,17 +23,14 @@
 }
 
 .right-image {
-    width: 213px;
+    width: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 26px;
+    margin-top: 18px;
     margin-right: 112px;
-}
+    margin-bottom: 10px;
 
-.menu-image {
-    max-width: 100%;
-    height: auto;
 }
 
 .buttom {
@@ -69,6 +66,10 @@
 
 .custom-button:hover {
     background-color: #0056b3;
+}
+
+.CustomButton-sty {
+    margin-left: 20px;
 }
 
 @media (max-width: 600px) {
@@ -110,7 +111,7 @@
         height: auto;
     }
 
-    .CustomButton {
+    .CustomButton-sty {
         display: none;
     }
 

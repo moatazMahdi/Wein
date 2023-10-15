@@ -1,7 +1,7 @@
 .PagesHeader-main-container {
     width: auto;
     background-image: url('../../assets/images/about/aboutHeader.png');
-    height: auto;
+    height: 100vh;
     background-size: cover;
     background-repeat: repeat-x;
     max-height: 100vh;
@@ -15,11 +15,28 @@
     top: -1px;
 }
 
+
+
 .PagesHeader-container {
+    position: absolute;
+    top: 0;
     background: rgba(9, 6, 43, 0.90);
     width: auto;
-    height: 95vh;
+    height: 100vh;
     opacity: 0.7;
+}
+
+.new-navBar {
+    width: 100%;
+    /* background-color: aqua; */
+    height: auto;
+    position: fixed;
+}
+
+.new-navBar.hidden {
+    display: none;
+    background-color: rgb(198, 0, 17);
+
 }
 
 .PagesHeader-text-container {
@@ -35,6 +52,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+
 }
 
 .PagesHeader-text-row p {
@@ -77,7 +95,7 @@
     .PagesHeader-main-container {
         width: auto;
         background-image: url('../../assets/images/about/aboutHeader.png');
-        height: auto;
+        height: 630px;
         background-size: cover;
         background-repeat: repeat-x;
         max-height: 100vh;
@@ -94,7 +112,7 @@
     .PagesHeader-container {
         background: rgba(9, 6, 43, 0.90);
         width: auto;
-        height: 100vh;
+        height: 630px;
         opacity: 0.7;
     }
 
@@ -111,6 +129,7 @@
         display: flex;
         flex-direction: row;
         align-items: center;
+        margin-top: 120px;
     }
 
     .PagesHeader-text-row p {
@@ -129,13 +148,13 @@
     .PagesHeader-text-demo {
         color: #FFF;
         font-family: Helvetica Neue;
-        font-size: 30px;
+        font-size: 29px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
         letter-spacing: 1.28px;
-        max-width: 90%;
-        margin-top: 20%;
+        max-width: 100%;
+        margin-top: 5%;
 
     }
 
