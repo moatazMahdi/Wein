@@ -1,4 +1,6 @@
-interface CustomButton {
+import { CSSProperties, useState } from "react";
+
+interface CustomButtonProps {
   text: string;
   fontSize: string;
   fontWeight: string;
@@ -7,7 +9,10 @@ interface CustomButton {
   backgroundColor: string;
   color: string;
   onClick: () => void;
+  hoverBackgroundColor: string;
+  hoverColor: string;
 }
+
 const CustomButton = ({
   text,
   fontSize,
@@ -17,52 +22,48 @@ const CustomButton = ({
   backgroundColor,
   color,
   onClick,
-}: CustomButton) => {
-  const buttonStyle = {
-    backgroundColor: backgroundColor,
-    color: color,
+}: CustomButtonProps) => {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const buttonStyle: CSSProperties = {
+    backgroundColor: isHovered ? "#ffffff" : backgroundColor,
+    color: isHovered ? "#000000" : color,
     padding: "10px 20px",
-    border: "2px solid #ffff",
+    border: "2px solid #ffffff",
     cursor: "pointer",
-    fontSize: fontSize,
-    fontWeight: fontWeight,
+    fontSize,
+    fontWeight,
     textAlign: "center",
     fontFamily: "Helvetica Neue",
     fontStyle: "normal",
     lineHeight: "normal",
     letterSpacing: "1px",
-    width: width,
-    height: height,
+    width,
+    height,
+    transition: "background-color 0.3s ease, color 0.3s ease",
   };
-  const buttonStylewithBackground = {
-    backgroundColor:
-      "linear-gradient(89deg, #E64124 0.72%, #3F1BDD 51.32%, #3F1BDD 98.86%)",
-    color: color,
-    padding: "10px 20px",
-    border: "2px solid #ffff",
-    cursor: "pointer",
-    fontSize: fontSize,
-    fontWeight: fontWeight,
-    textAlign: "center",
-    fontFamily: "Helvetica Neue",
-    fontStyle: "normal",
-    lineHeight: "normal",
-    letterSpacing: "1px",
-    width: width,
-    height: height,
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
   };
-  const withBackground = true;
-  const buttonStyleToUse = withBackground
-    ? buttonStyle
-    : buttonStylewithBackground;
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
 
   return (
-    <>
-      <button style={buttonStyleToUse} onClick={onClick}>
-        {text}
-      </button>
-    </>
+    <button
+      style={buttonStyle}
+      onClick={onClick}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+      className=""
+    >
+      {text}
+    </button>
   );
 };
 
 export default CustomButton;
+
+// export default CustomButton;

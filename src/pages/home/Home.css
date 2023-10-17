@@ -2,8 +2,7 @@
     background-color: hwb(0 0% 100%);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100vw;
-    height: 100vh;
+    width: auto;
 
 }
 
@@ -12,4 +11,23 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.home-contener-Navbar {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    z-index: 1000;
+}
+
+
+.home-contener-Navbar.hidden {
+    display: none;
+}
+
+.background-light {
+    background-color: #000000;
+    /* Change this to the light color you want */
+    transition: background-color 0.3s ease;
+    /* Add a smooth transition effect */
 }

@@ -18,12 +18,12 @@ const About = () => {
         <div className="company-culture-right-sction">
           <h2>Our work culture company’s</h2>
           <p>
-            Like Steve Jobs quotes, “Design is not just what <br />
-            it looks like and feels like. Design is how it works”. We always try
-            to make a great output by this culture:
+            Like Steve Jobs quotes, “Design is not just what it looks like and
+            feels like. Design is how it works”. We always try to make a great
+            output by this culture:
           </p>
           <div className="company-culture-container">
-            <div className="left-column" style={{ marginLeft: "170px" }}>
+            <div className="left-column">
               {companyCulture.slice(0, 3).map((text, index) => (
                 <div className="company-culture-service" key={index}>
                   <img src={RightImage} alt={`Image ${index}`} />
@@ -31,7 +31,7 @@ const About = () => {
                 </div>
               ))}
             </div>
-            <div className="right-column" style={{ marginLeft: "20px" }}>
+            <div className="right-column">
               {companyCulture.slice(3).map((text, index) => (
                 <div className="company-culture-service" key={index}>
                   <img src={RightImage} alt={`Image ${index}`} />
@@ -69,7 +69,7 @@ const About = () => {
                 className="blog-article-item"
                 style={{ backgroundImage: `url(${item.image})` }}
               >
-                <div className="blog-article-item-div">
+                <div className="blog-about-item-div">
                   <p>{item.name}</p>
                   <p className="blog-article-item-p">{item.description}</p>
                   <div className="blog-article-item-learnMore-botton">
@@ -95,6 +95,8 @@ const About = () => {
               onClick={() => {
                 alert("Senddddddddddd ");
               }}
+              hoverBackgroundColor={""}
+              hoverColor={""}
             />
           </div>
         </div>
@@ -104,11 +106,13 @@ const About = () => {
 
   return (
     <div className="about-main-container">
-      <PagesHeader
-        title="ABOUT"
-        Descrpion="We help businesses and brands succeed in the digital age."
-        sub_Descrpion=""
-      />
+      <div className="PagesHeader">
+        <PagesHeader
+          title="ABOUT"
+          Descrpion="We help businesses and brands succeed in the digital age."
+          sub_Descrpion="We help businesses and brands succeed in the digital age.We help businesses and brands succeed in the digital age.We help businesses and brands succeed in the digital age.We help businesses and brands succeed in the digital age.We help businesses and brands succeed in the digital age.We help businesses and brands succeed in the digital age."
+        />
+      </div>
       <div className="about-body-container">
         <OurTeam />
         {/* {renderMeetTeemSection()} */}

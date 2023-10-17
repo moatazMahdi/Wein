@@ -1,14 +1,22 @@
 .menu-container {
-    width: 120px;
-    height: 250px;
-    background-color: aqua;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    flex-direction: column;
 }
 
-/* Menu.css */
-
 .menu {
-    background-color: #333;
+    display: flex;
     color: #fff;
+    flex-direction: row;
+
+}
+
+.menu-close {
+    position: absolute;
+    right: 20%;
+    top: 0%;
 }
 
 .menu-list {
@@ -16,6 +24,9 @@
     padding: 0;
     margin: 0;
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .menu-item {
@@ -33,4 +44,127 @@
 
 .menu-item a:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .menu-container {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(240, 0, 0, 0.8);
+    }
+
+    .menu {
+        background-color: #333;
+        color: #fff;
+    }
+
+    .menu-list {
+
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-item {
+        margin-right: 20px;
+    }
+
+    .menu-item:last-child {
+        margin-right: 0;
+    }
+
+    .menu-item a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .menu-item a:hover {
+        text-decoration: underline;
+    }
+
+    .menu-close {
+        position: absolute;
+        right: 20%;
+        top: 0%;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .menu-container {
+        width: 220px;
+        height: auto;
+        background-color: rgba(240, 0, 0, 0.8);
+
+    }
+
+    .menu {
+        background-color: #e6e6e6;
+        color: #fff;
+    }
+
+    .menu-list {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        /* left: 50%; */
+        right: 5%;
+        background-color: #fff;
+        width: 60%;
+        border-radius: 5px;
+        /* border-radius: 12px 12px 0px 0px; */
+
+    }
+
+    .menu-item {
+        margin-right: 20px;
+        color: black;
+        background-color: #fff;
+        width: 90%;
+        padding-left: 20px;
+        /* border-radius: 12px 12px 12px 12px; */
+        margin-top: 5px;
+
+    }
+
+    .menu-item-Contact {
+        margin-right: 20px;
+        color: black;
+        background-color: red;
+        width: 90%;
+        border-radius: 12px 12px 12px 12px;
+        margin-top: 5px;
+        padding-left: 20px;
+    }
+
+    .menu-item:last-child {
+        margin-right: 0;
+    }
+
+    .menu-item a {
+        text-decoration: none;
+        color: #050505;
+    }
+
+    .menu-item-Contact a {
+        text-decoration: none;
+        color: #050505;
+    }
+
+    .menu-item a:hover {
+        text-decoration: underline;
+    }
+
+    .menu-item-Contact a:hover {
+        text-decoration: underline;
+    }
+
+    .menu-close {
+        position: absolute;
+        right: 0%;
+        top: 0%;
+    }
+
 }

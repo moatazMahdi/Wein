@@ -4,7 +4,7 @@
     margin-left: 112px;
     margin-right: 100px;
     margin-top: 129px;
-    height: 640px;
+    height: auto;
 }
 
 .our-client-contener-main h1 {
@@ -41,8 +41,8 @@
 .our-clients-images {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
+    justify-content: flex-start;
+    width: auto;
 }
 
 .our-clients-logo {
@@ -53,4 +53,54 @@
     width: calc(25% - 20px);
     height: 120px;
     margin-top: 50px;
+}
+
+@media (max-width: 480px) {
+    .our-client-contener-main {
+        margin: 0px;
+        height: auto;
+        margin-left: 0px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+
+    }
+
+    .our-client-contener-main h1 {
+        font-size: 32px;
+        line-height: 36px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .our-clients-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .our-clients-arow {
+        margin: 0%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .our-clients-arow img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .our-clients-images {
+        justify-content: flex-start;
+    }
+
+    .our-clients-logo {
+        width: calc(50% - 20px);
+        margin: 5px;
+        margin-top: 20px;
+    }
+
+    .our-clients-logo img {
+        width: 100px;
+        align-self: center;
+    }
 }

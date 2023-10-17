@@ -1,12 +1,15 @@
 import "./Header.css";
 import CustomButton from "../custombutton/customButton";
-import Navbar from "../navbar/Navbar";
 import Rowline from "../../assets/images/row.svg";
 import Discover from "../../assets/images/discover.svg";
-const Header = () => {
+
+type CustomButtonProps = {
+  onClickLetsgo: () => void;
+};
+
+const Header: React.FC<CustomButtonProps> = ({ onClickLetsgo }) => {
   return (
     <div className="home-contener-main">
-      <Navbar />
       <div className="home-contener">
         <div className="home-contan">
           <p className="text-center">Creating digital products and</p>
@@ -32,10 +35,9 @@ const Header = () => {
               height="62px"
               backgroundColor="transparent"
               color="#fff"
-              onClick={() => {
-                // Define your click event handler here
-                alert("lets, go ");
-              }}
+              onClick={onClickLetsgo}
+              hoverBackgroundColor="#fff"
+              hoverColor="#000"
             />
           </div>
           <div className="Discover-contener">

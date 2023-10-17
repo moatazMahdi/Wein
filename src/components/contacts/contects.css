@@ -1,5 +1,5 @@
 .contects-container {
-    width: 100%;
+    width: auto;
     height: 623px;
     flex-shrink: 0;
     background: linear-gradient(58deg, #E54124 6.46%, #3F1BDD 35.51%);
@@ -8,8 +8,8 @@
 }
 
 .contects-container-section-right {
-    width: 538px;
-    height: 337px;
+    max-width: 538px;
+    max-height: 337px;
     flex-shrink: 0;
     margin-left: 111px;
     margin-top: 142PX;
@@ -21,7 +21,7 @@
 }
 
 .contects-container-section-right h1 {
-    width: 538px;
+    max-width: 538px;
     color: #FFF;
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: Helvetica Neue;
@@ -35,7 +35,7 @@
 }
 
 .contects-container-section-right h3 {
-    width: 538px;
+    max-width: 538px;
     color: #FFF;
     font-feature-settings: 'clig' off, 'liga' off;
     font-family: Helvetica Neue;
@@ -60,8 +60,8 @@
 }
 
 .contects-container-section-lift {
-    width: 449px;
-    height: 355px;
+    width: auto;
+    height: auto;
     flex-shrink: 0;
     margin-right: 111px;
     margin-top: 144px;
@@ -78,7 +78,8 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
-    width: 449px;
+    width: auto;
+
 }
 
 .underline-input label {
@@ -105,4 +106,111 @@
 .underline-input textarea:focus {
     border-bottom-color: #007bff;
     /* Change this color for the focused underline */
+}
+
+@media (max-width: 480px) {
+    .contects-container {
+        width: auto;
+        height: auto;
+        flex-shrink: 0;
+        background: linear-gradient(58deg, #E54124 6.46%, #3F1BDD 35.51%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .contects-container-section-right {
+        width: auto;
+        height: auto;
+        flex-shrink: 0;
+        margin-left: 20px;
+        margin-top: 30PX;
+        margin-bottom: 0PX;
+
+    }
+
+    .contects-container-section-right h1 {
+        max-width: 100%;
+        color: #FFF;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Helvetica Neue;
+        font-size: 42px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 61px;
+        letter-spacing: -1px;
+        margin-top: 10px;
+    }
+
+    .contects-container-section-right h3 {
+        max-width: 95%;
+        color: #FFF;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Helvetica Neue;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 34px;
+        letter-spacing: -0.05px;
+        margin-top: 18px;
+    }
+
+    .contects-container-section-right-CONTACT {
+        color: #FFF;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Helvetica Neue;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: -0.2px;
+    }
+
+    .contects-container-section-lift {
+        width: auto;
+        height: auto;
+        flex-shrink: 0;
+        margin-right: 111px;
+        margin-top: 40px;
+        margin-bottom: 54PX;
+    }
+
+    .underline-form {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .underline-input {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        width: 293px;
+    }
+
+    .underline-input label {
+        color: #FFF;
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: Helvetica Neue;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 33px;
+
+    }
+
+    .underline-input input,
+    .underline-input textarea {
+        border: none;
+        border-bottom: 2px solid #333;
+        padding: 5px;
+        outline: none;
+        transition: border-bottom-color 0.2s ease-in-out;
+    }
+
+    .underline-input input:focus,
+    .underline-input textarea:focus {
+        border-bottom-color: #007bff;
+    }
+
 }

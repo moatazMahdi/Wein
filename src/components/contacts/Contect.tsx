@@ -1,5 +1,5 @@
-import "./Contects.css";
-import { useState } from "react";
+import "./contects.css";
+import { useEffect, useState } from "react";
 import CustomButton from "../custombutton/customButton";
 function Contect() {
   const [formData, setFormData] = useState({
@@ -7,6 +7,8 @@ function Contect() {
     email: "",
     message: "",
   });
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 480);
+
   const { name, email, message } = formData;
 
   const handleChange = (
@@ -24,6 +26,19 @@ function Contect() {
     // Handle form submission (e.g., send data to a server)
     console.log(formData);
   };
+  useEffect(() => {
+    // Add a resize event listener to detect screen size changes
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 480);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
     <div className="contects-container">
       <div className="contects-container-section-right">
@@ -82,19 +97,37 @@ function Contect() {
               onChange={handleChange}
             />
           </div>
-          <CustomButton
-            text="Send"
-            fontSize="28px"
-            fontWeight="700"
-            width="447px"
-            height="66px"
-            backgroundColor="#fff"
-            color="#3F1BDD"
-            onClick={() => {
-              // Define your click event handler here
-              alert("Senddddddddddd ");
-            }}
-          />
+          {isMobile ? (
+            <CustomButton
+              text="Send"
+              fontSize="28px"
+              fontWeight="700"
+              width="291.695px"
+              height="66px"
+              backgroundColor="#fff"
+              color="#3F1BDD"
+              onClick={() => {
+                alert("Senddddddddddd ");
+              }}
+              hoverBackgroundColor={""}
+              hoverColor={""}
+            />
+          ) : (
+            <CustomButton
+              text="Send"
+              fontSize="28px"
+              fontWeight="700"
+              width="447px"
+              height="66px"
+              backgroundColor="#fff"
+              color="#3F1BDD"
+              onClick={() => {
+                alert("Senddddddddddd ");
+              }}
+              hoverBackgroundColor={""}
+              hoverColor={""}
+            />
+          )}
         </form>
       </div>
     </div>

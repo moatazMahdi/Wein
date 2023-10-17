@@ -3,11 +3,16 @@ import "./styles.css";
 import { ourService } from "../../Data/inedx";
 import Contect from "../../components/contacts/Contect";
 import Footer from "../../components/footer/Footer";
-import { useNavigate, Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const renderServiceData = () => {
   const navigate = useNavigate();
-  const handleContactUsClick = (item) => {
+  const handleContactUsClick = (item: {
+    id: any;
+    title: any;
+    description: any;
+    image: any;
+  }) => {
     // Use the history object to navigate to the detailed view with the cardId, title, and description as route parameters
     navigate(`/service/${item.id}`, {
       state: {

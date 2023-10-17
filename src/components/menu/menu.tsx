@@ -1,26 +1,63 @@
-import "./Menu.css";
-import { Link, useNavigate } from "react-router-dom"; // If using React Router for navigation
+import "./menu.css";
+import { Link } from "react-router-dom"; // If using React Router for navigation
 
-function MenuScreen() {
-  const navigate = useNavigate();
+type MenuScreenProps = {
+  isOpen: boolean;
+  onClose: () => void;
+  closeMenu: () => void;
+};
+
+function MenuScreen({ isOpen, onClose, closeMenu }: MenuScreenProps) {
+  const menuClassName = isOpen ? "menu-open" : "menu-container";
+  const newMenu = isOpen ? "menu open" : "menu";
+  const isMobile = window.innerWidth <= 480;
+
+  const scrollToTop = () => {
+    if (window.location.pathname === "/") {
+      window.scrollTo(0, 0); // Scroll to the top of the page
+    }
+    onClose(); // Close the menu
+  };
+
   return (
-    <nav className="menu">
-      <ul className="menu-list">
-        <li className="menu-item">
-          <Link to="/">Home</Link>
+    <div className={newMenu}>
+      <nav className={menuClassName}>
+        <ul className="menu-list">
+          <li className="menu-item">
+            <Link to="/" onClick={scrollToTop}>
+              Home
+            </Link>
+          </li>
+          <li className="menu-item">
+            <Link to="/about" onClick={scrollToTop}>
+              About
+            </Link>
+          </li>
+          <li className="menu-item">
+            <Link to="/service" onClick={scrollToTop}>
+              Service
+            </Link>
+          </li>
+          <li className="menu-item">
+            <Link to="/bolg" onClick={scrollToTop}>
+              BLOG
+            </Link>
+            {isMobile && (
+              <button className="menu-close" onClick={closeMenu}>
+                Close
+              </button>
+            )}
+          </li>
+        </ul>
+      </nav>
+      {isMobile && (
+        <li className="menu-item-Contact">
+          <Link to="/contact" onClick={onClose}>
+            Contact Us
+          </Link>
         </li>
-        <li className="menu-item">
-          <Link to="/about">About</Link>
-        </li>
-        <li className="menu-item">
-          <Link to="/service">Service</Link>
-        </li>
-        <li className="menu-item">
-          <Link to="/contact">Contact Us</Link>
-        </li>
-        {/* Add more menu items as needed */}
-      </ul>
-    </nav>
+      )}
+    </div>
   );
 }
 
