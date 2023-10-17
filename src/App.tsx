@@ -1,9 +1,12 @@
+import { Suspense } from "react";
 import RoutesNavegation from "./navegations/Routes";
 
 function App() {
   return (
     <>
-      <RoutesNavegation />
+      <Suspense fallback={<div>Looooooooood</div>}>
+        <RoutesNavegation />
+      </Suspense>
     </>
   );
 }

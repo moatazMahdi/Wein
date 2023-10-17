@@ -115,8 +115,8 @@ const Home = () => {
             </div>
           </header>
           <div className="home-contener-main">
+            <Header onClickLetsgo={scrollToLetsGo} />
             <section ref={letsGoSectionRef} id="letsGoSection">
-              <Header onClickLetsgo={scrollToLetsGo} />
               <Body />
             </section>
             <section ref={contactUsSectionRef} id="ContactUsSection">

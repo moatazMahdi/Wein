@@ -218,6 +218,7 @@ const Body = () => {
         />
         <meta name="keywords" content="relevant, keywords, here" />
       </Helmet>
+
       <section id="brands">
         <div className="brands-row">
           {brands.map((item, index) => (
@@ -259,7 +260,7 @@ const Body = () => {
         </div>
       </section>
       <section id="our-work">{renderOurWork()}</section>
-      <section id="our-clients">
+      <section id="our-clients" className="ourclients-costum-styles">
         <Ourclients />
       </section>
     </div>

@@ -359,6 +359,10 @@
     letter-spacing: -0.2px;
 }
 
+.ourclients-costum-styles {
+    margin-bottom: 40px;
+}
+
 @media (max-width: 480px) {
     .main-contener {
         width: auto;
@@ -620,40 +624,30 @@
 
     .world-sction-number {
         flex-direction: row;
-        /* Stack elements vertically */
         align-items: center;
-        /* Center elements horizontally */
         width: auto;
-        /* Full width */
         margin: 20px;
-        /* Adjust vertical margin */
     }
 
     .section {
         flex-basis: 100%;
-        /* Make sections full width */
         margin-bottom: 10px;
-        /* Reduce margin */
     }
 
     .image-between {
         max-width: auto;
         height: 80px;
-        /* Allow image height to adjust */
         margin: 0;
         margin-top: -20px;
     }
 
     .section-column-number {
         font-size: 48px;
-        /* Reduce font size */
     }
 
     .section-column-text {
         font-size: 16px;
-        /* Reduce font size */
         text-align: center;
-        /* Center text */
     }
 
     .prev-next-buttons {
